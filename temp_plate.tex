@@ -1,0 +1,172 @@
+this is just me trying out new diagrams
+
+\begin{tikzpicture}
+[
+phrasenode/.style={rectangle,very thick, minimum size=5mm},
+labelnode/.style={rectangle,very thick, minimum size=5mm},
+factornode/.style={rectangle,draw=black, fill=black,very thick, minimum size=7mm},
+phinode/.style={circle,draw=black!60, fill=black!20,very thick, minimum size=7mm},
+gammanode/.style={circle,draw=black!60,very thick, minimum size=7mm},
+lambdanode/.style={circle,draw=black!60,very thick, minimum size=7mm}
+]
+%Nodes
+%phrase nodes
+%\node[lambdanode] (l1) {\(\lambda_1\)};
+%\node[lambdanode] (l2) [position=0:{\nodeDist} from l1] {\(\lambda_2\)};
+%\node[lambdanode] (l3) [position=0:{\nodeDist} from l2] {\(\lambda_3\)};
+
+  % Define nodes
+  %col1
+  \node[lambdanode]                               (l1) {\(\lambda_1\)};
+  \node[factornode] [position=90:{\nodeDist} from l1] (f11) {\textcolor{white}{\(f_{1j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f11] (cv11) {\(\phi_{1j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f11] (g11) {\(\gamma_{1j}\)};
+  %col2
+  \node[lambdanode] (l2) [position=0:{\nodeDist} from l1] {\(\lambda_2\)};
+  \node[factornode] [position=90:{\nodeDist} from l2] (f21) {\textcolor{white}{\(f_{2j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f21] (cv21) {\(\phi_{2j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f21] (g21) {\(\gamma_{2j}\)};
+  %col3
+  \node[lambdanode] (l3) [position=0:{\nodeDist} from l2] {\(\lambda_3\)};
+  
+  \node[factornode] [position=90:{\nodeDist} from l3] (f31) {\textcolor{white}{\(f_{3j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f31] (cv31) {\(\phi_{3j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f31] (g31) {\(\gamma_{3j}\)};
+  \node[factornode] [position=90:{1.75\nodeDist} from f31] (f32) {\textcolor{white}{\(f_{3j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f32] (cv32) {\(\phi_{3j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f32] (g32) {\(\gamma_{3j}\)};
+  \node[factornode] [position=90:{1.75\nodeDist} from f32] (f33) {\textcolor{white}{\(f_{3j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f33] (cv33) {\(\phi_{3j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f33] (g33) {\(\gamma_{3j}\)};
+  \node[factornode] [position=90:{1.75\nodeDist} from f33] (f34) {\textcolor{white}{\(f_{3j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f34] (cv34) {\(\phi_{3j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f34] (g34) {\(\gamma_{3j}\)};
+  
+%phrase nodes
+%col1
+\node[phrasenode] [position=-90:{0.1*\nodeDist} from l1] (ph1) {\textit{move}};
+%col2
+\node[phrasenode] [position=-90:{0.1*\nodeDist} from l2] (ph2) {\textit{to}};
+%col3
+\node[phrasenode] [position=-90:{0.1*\nodeDist} from l3] (ph3) {\textit{the cone}};
+
+  % Connect the nodes
+  %col1
+  \draw (l1) to[out=60,in=-60] (f11);
+  \draw[-] (cv11) -- (f11);
+  \draw[-] (g11) -- (f11);
+  %col2
+  \draw (l2) to[out=60,in=-60] (f21);
+  \draw[-] (cv21) -- (f21);
+  \draw[-] (g21) -- (f21);
+  %merge col1 col2
+  \draw[-] (f11) -- (g21);
+  \draw[-] (f11) -- (cv21);
+  %col3
+  \draw (l3) to[out=60,in=-60] (f31);
+  \draw[-] (cv31) -- (f31);
+  \draw[-] (g31) -- (f31);
+  \draw (l3) to[out=60,in=-60] (f32);
+  \draw[-] (cv32) -- (f32);
+  \draw[-] (g32) -- (f32);
+  \draw (l3) to[out=60,in=-60] (f33);
+  \draw[-] (cv33) -- (f33);
+  \draw[-] (g33) -- (f33);
+  \draw (l3) to[out=60,in=-60] (f34);
+  \draw[-] (cv34) -- (f34);
+  \draw[-] (g34) -- (f34);
+  %merge col2 col3
+  \draw[-] (f21) -- (g31);
+  \draw[-] (f21) -- (cv31);
+  \draw[-] (f21) -- (g32);
+  \draw[-] (f21) -- (cv32);
+  \draw[-] (f21) -- (g33);
+  \draw[-] (f21) -- (cv33);
+  \draw[-] (f21) -- (g34);
+  \draw[-] (f21) -- (cv34);
+
+  % Plates
+  \plate {p1} {(cv11)(f11)(g11)} {\(\gamma_{1j} \epsilon \Gamma_{KP}\)};
+  \plate {p2} {(cv21)(f21)(g21)} {\(\gamma_{2j} \epsilon \Gamma_{KP}\)};
+  \plate {p31} {(cv31)(f31)(g31)} {\(\gamma_{3j} \epsilon \Gamma_{KP}\)};
+  \plate {p32} {(cv32)(f32)(g32)} {\(\gamma_{3j} \epsilon \Gamma_{UP}\)};
+  \plate {p33} {(cv33)(f33)(g33)} {\(\gamma_{3j} \epsilon \Gamma_{KH}\)};
+  \plate {p34} {(cv34)(f34)(g34)} {\(\gamma_{3j} \epsilon \Gamma_{UH}\)};
+  %\plate {yx} {(x)(l1)} {$N$} ;
+  %\plate {} {(w)(l1)(yx.north west)(yx.south west)} {$M$} ;
+
+\end{tikzpicture}
+
+VERSION 2\\
+
+\begin{tikzpicture}
+[
+phrasenode/.style={rectangle,very thick, minimum size=5mm},
+labelnode/.style={rectangle,very thick, minimum size=5mm},
+factornode/.style={rectangle,draw=black, fill=black,very thick, minimum size=7mm},
+phinode/.style={circle,draw=black!60, fill=black!20,very thick, minimum size=7mm},
+gammanode/.style={circle,draw=black!60,very thick, minimum size=7mm},
+lambdanode/.style={circle,draw=black!60,very thick, minimum size=7mm}
+]
+%Nodes
+%phrase nodes
+%\node[lambdanode] (l1) {\(\lambda_1\)};
+%\node[lambdanode] (l2) [position=0:{\nodeDist} from l1] {\(\lambda_2\)};
+%\node[lambdanode] (l3) [position=0:{\nodeDist} from l2] {\(\lambda_3\)};
+
+  % Define nodes
+  %col1
+  \node[lambdanode]                               (l1) {\(\lambda_1\)};
+  \node[factornode] [position=90:{1.5*\nodeDist} from l1] (f11) {\textcolor{white}{\(f_{1j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f11] (cv11) {\(\phi_{1j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f11] (g11) {\(\gamma_{1j}\)};
+  %col2
+  \node[lambdanode] (l2) [position=0:{\nodeDist} from l1] {\(\lambda_2\)};
+  \node[factornode] [position=90:{1.5*\nodeDist} from l2] (f21) {\textcolor{white}{\(f_{2j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f21] (cv21) {\(\phi_{2j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f21] (g21) {\(\gamma_{2j}\)};
+  %col3
+  \node[lambdanode] (l3) [position=0:{2*\nodeDist} from l2] {\(\lambda_3\)};
+  \node[factornode] [position=90:{1.5*\nodeDist} from l3] (f31) {\textcolor{white}{\(f_{3j}\)}};
+  \node[phinode] [position=-135:{0.25*\nodeDist} from f31] (cv31) {\(\phi_{3j}\)};
+  \node[gammanode] [position=135:{0.25*\nodeDist} from f31] (g31) {\(\gamma_{3j}\)};
+
+%phrase nodes
+%col1
+\node[phrasenode] [position=-90:{0.1*\nodeDist} from l1] (ph1) {\textit{move}};
+%col2
+\node[phrasenode] [position=-90:{0.1*\nodeDist} from l2] (ph2) {\textit{to}};
+%col3
+\node[phrasenode] [position=-90:{0.1*\nodeDist} from l3] (ph3) {\textit{the cone}};
+
+  % Connect the nodes
+  %col1
+  \draw (l1) to[out=60,in=-60] (f11);
+  \draw[-] (cv11) -- (f11);
+  \draw[-] (g11) -- (f11);
+  %col2
+  \draw (l2) to[out=60,in=-60] (f21);
+  \draw[-] (cv21) -- (f21);
+  \draw[-] (g21) -- (f21);
+  %merge col1 col2
+  \draw[-] (f11) -- (g21);
+  \draw[-] (f11) -- (cv21);
+  %col3
+  \draw (l3) to[out=60,in=-60] (f31);
+  \draw[-] (cv31) -- (f31);
+  \draw[-] (g31) -- (f31);
+  %merge col2 col3
+  \draw[-] (f21) -- (g31);
+  \draw[-] (f21) -- (cv31);
+
+  % Plates
+  \plate {p1} {(cv11)(f11)(g11)} {\(\gamma_{1j} \epsilon \Gamma_{KP}\)};
+  \plate {p2} {(cv21)(f21)(g21)} {\(\gamma_{2j} \epsilon \Gamma_{KP}\)};
+  \plate {p31} {(cv31)(f31)(g31)} {\(\gamma_{3j} \epsilon \Gamma_{l}\)};
+  \plate {p32} {(p31)} {\(\Gamma_l \epsilon \{\Gamma_{KP},\Gamma_{UP},\Gamma_{KH},\Gamma_{UH}\}\)}
+  %\plate {yx} {(x)(l1)} {$N$} ;
+  %\plate {} {(w)(l1)(yx.north west)(yx.south west)} {$M$} ;
+
+\end{tikzpicture}
+
+END

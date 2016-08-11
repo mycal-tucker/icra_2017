@@ -1,0 +1,32 @@
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  
+
+\IEEEoverridecommandlockouts
+\overrideIEEEmargins
+
+\usepackage{xparse} 
+\usepackage{amsmath} 
+\usepackage{amssymb}
+\usepackage{amsfonts} 
+\usepackage{bbm}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%\usepackage{caption}
+%\usepackage{subcaption}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{multirow}
+
+% for biblatex and mklatex
+\usepackage[backend=bibtex,style=ieee,natbib=true]{biblatex} %added
+\addbibresource{ieeeabrv.bib} % Abbreviations
+\addbibresource{main.bib} %added
+
+\usepackage{nomencl} 
+\makenomenclature
+
+%mycal below
+\graphicspath{{images/}}
+\DeclareMathOperator*{\argmax}{\arg\max} %added by Mycal
+\usepackage{adjustbox} %added by mycal
