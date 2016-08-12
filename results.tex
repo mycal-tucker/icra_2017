@@ -46,20 +46,35 @@ here I show how DCG-UPUP-Away learns symbols
 \begin{figure}[h]
 \centering
 \includegraphics[width=8.5cm]{symbols_corr}
-\caption{this is how we show that we learn symbols}
+\caption{this is how we show that we learn symbols. I will update this label (and caption) of this figure}
 \label{fig:g_acc}
 \end{figure}
 
 \subsection{Hardware Demonstration}
-here I show how this works on hardware.
-I will say how it works in the 4 cases: known perceived (KP), known hypothesized (KH), unknown perceived (UP), and unknown hypothesized (UH).
-Here is a sketch of a final figure I'd like to include:
+Outside the simulation environment, DCG-UPUP-Away was tested on a physical turtlebot in a laboratory setting.
+The turtlebot was placed facing a cylinder (known) and a cone (unknown).
+In addition, a cube (known) and a crate (unknown) were located behind the turtlebot.
+All objects were labeled with AR-track tags, which, in conjunction with (cite AR track package) was used in order to generate the world model $\Upsilon$ from a kinect mounted on the turtlebot.\\
+%I'd like to add a footnote saying that I have videos of these demos
+\indent Four natural language commands were used to demonstrate the full range of abilities of DCG-UPUP-Away.
+First, the turtlebot was given the command ``move towards the cube.''
+The turtlebot successfully drove to the cube, demonstrating a correct grounding to a known, perceived object.\\
+\indent Second, the turtlebot was given the command ``move towards the cone.''
+The turtlebot drove to the cone, demonstrating that it perceived the cone as unknown, recognized the phrase ``cone'' as unknown, and grounded the unknown phrase to the unknown object.
+Thus, a command was correctly grounded to an unknown, perceived object.\\
+\indent Third, the turtlebot was given the command ``move towards the cube.''
+The turtlebot rotated in place until the cube came in view, and then approached the cube.
+In other words, the command was first grounded to a known, hypothesized object and then, once then cube was perceived, to a known, perceived object.\\
+\indent Fourth, the turtlebot was given the command ``move towards the crate.''
+Once again, the turtlebot rotated in place, this time until it saw the crate, whereupon it drove to the crate.
+This demonstrates two important behaviors: 1) the turtlebot must have learned what a cone was, otherwise the unknown phrase (``crate'') would have been grounded to the cone and 2) the turtlebot grounded the command to an unknown, hypothesized object until the crate was perceived.
+The execution of this last command, including images of the physical behavior of the turtlebot as well as the model used for grounding, is shown in Figure~\ref{fig:hardware_demo}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=8.5cm]{hardware_sketch}
-\caption{this is a sketch of the 6 subfigures that demonstrate hypothesized groundings on hardware and in the model, and shows how it learns.}
-\label{fig:g_acc}
+\caption{this is a sketch of the 6 subfigures that demonstrate hypothesized groundings on hardware and in the model, and shows how it learns. I'd like this to go across the top of the page.}
+\label{fig:hardware_demo}
 \end{figure}
 
 \subsection{Limitations}
