@@ -1,2 +1,37 @@
 \section{Technical Approach} \label{sec:technical}
 technical dev goes here
+
+I've written up the pseudo-code here so we can refer to it later:\\
+\begin{algorithm}
+\caption{My algorithm}\label{alg:dcg_upup_away}
+\begin{algorithmic}[1]
+\Procedure{DCG-UPUP-Away}{}
+\State $M \gets \text{new DCG-UPUP-Away}$
+\State $M.\Gamma \gets \text{init\_groundings}$
+\State $M.F \gets \text{init\_features}$
+\State $T \gets \text{init\_training}$
+\State $M.\text{train}(M.\Gamma, M.F, T)$
+\While {true}
+\State $\Upsilon \gets \text{perceive\_objects}(\text{camera},M.\Gamma)$
+\State $\Upsilon \gets \Upsilon + \text{hypothesize\_objects}(M.\Gamma)$
+\State $\boldsymbol{\lambda} \gets \text{get\_nl\_command}()$
+\State $[\boldsymbol{\phi}^*,\boldsymbol{\gamma}^*] \gets M.\text{ground}(\boldsymbol{\lambda},\Upsilon)$
+\If {$\boldsymbol{\gamma}^*.\text{is\_hypothesized}()$}
+\State $\text{spin\_in\_place()}$
+\Else
+\State $\text{drive\_to}(\boldsymbol{\gamma}^*)$
+\EndIf
+\State $T_u \gets \text{gen\_unsupervised\_training}(\boldsymbol{\lambda},\boldsymbol{\gamma}^*,\Upsilon)$
+\If {$\text{is\_unknown}(\boldsymbol{\lambda}) \& !\boldsymbol{\gamma}^*.\text{is\_hypothesized}()$}
+\State $\gamma' \gets \text{new\_grounding}(\boldsymbol{\lambda},\boldsymbol{\gamma}^*,\Upsilon)$
+\State $M.\Gamma \gets M.\Gamma + \gamma'$
+\State $M.F \gets M.F + f_{\text{word}}(\boldsymbol{\lambda}[\text{noun}])$
+\State $M.F \gets M.F + f_{\text{obj}}(\boldsymbol{\gamma}^*[\text{obj}])$
+\State $T_u \gets \text{replace\_unknown}(T_u,\gamma')$
+\EndIf
+\State $T \gets T + T_u$
+\State $M.\text{train}(M.\Gamma, M.F, T)$
+\EndWhile
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
