@@ -1,7 +1,43 @@
 \section{Technical Approach} \label{sec:technical}
-technical dev goes here
+\subsection{Symbol for Unknown}
+here I introduce the notion of an unknown symbol
 
-I've written up the pseudo-code here so we can refer to it later:\\
+Here's the factored equation:
+
+\begin{equation}
+\boldsymbol{\phi}^* = \argmax_{\boldsymbol{\phi} \epsilon \Phi^{|\boldsymbol{\lambda}|}} \frac{1}{Z} \prod_{ij} \Psi(\phi_i,\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP}),
+\label{eq:dcg_upup_llm1}
+\end{equation}
+
+And the features:
+\begin{equation}
+\Psi() = \exp \Big( \sum_{f \epsilon F_{\text{DCG}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP}) +...\\
+\sum_{f \epsilon F_{\text{Unknown}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP}) \Big)
+\label{eq:dcg_upup_llm2}.
+\end{equation}
+\subsection{Incremental Unsupervised Learning}
+Here I say how we use the unknown symbol to incrementally learn more symbols.
+There's no need for extra equations, but I could include something to show how domains are expanded.
+I think that's taken care of in the pseudocode, though.
+
+\subsection{Hypothesized Groundings out of Perception}
+Grounding out of world.
+Here are the equations:
+
+\begin{equation}
+\boldsymbol{\phi}^* = \argmax_{\boldsymbol{\phi} \epsilon \Phi^{|\boldsymbol{\lambda}|}} \frac{1}{Z} \prod_{ij} \Psi(\phi_i,\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}),
+\label{eq:dcg_upup_away_llm1}
+\end{equation}
+
+And the features:
+\begin{equation}
+\Psi() = \exp \Big( \sum_{f \epsilon F_{\text{DCG}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) +...\\
+\sum_{f' \epsilon F_{\text{Unknown}}} \mu_{f'} f'(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) +...\\
+\mu_{f_H} f_{H}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \Big)
+\label{eq:dcg_upup_away_llm2}.
+\end{equation}
+
+Then I can include this pseudocode:\\
 \begin{algorithm}
 \caption{My algorithm}\label{alg:dcg_upup_away}
 \begin{algorithmic}[1]
@@ -35,3 +71,17 @@ I've written up the pseudo-code here so we can refer to it later:\\
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
+
+\subsection{Adjective-Attribute Heuristics}
+Here I describe how color can be used to bias the correct grounding.
+
+Here are the equations.
+The factored equation is the same as before, so I will leave it out.
+The features:
+\begin{equation}
+\Psi() = \exp \Big( \sum_{f \epsilon F_{\text{DCG}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) +...\\
+\sum_{f' \epsilon F_{\text{Unknown}}} \mu_{f'} f'(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) +...\\
+\mu_{f_H} f_{H}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) +...\\
+\sum_{f'' \epsilon F_{\text{Color}}} \mu_{f''} f''(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \Big)
+\label{eq:color_llm2}.
+\end{equation}
