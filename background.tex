@@ -1,68 +1,76 @@
 \section{Background}
 \label{sec:background}
-The work in this paper falls within the field of natural language grounding.
-The grounding problem consists of correctly determining how phrases relate to the real world (e.g. that the phrase ``go to the cube'' means approaching a physical cube).\\
-\indent Before proceeding further, one must define the domains over which the grounding problem may be solved.
-In the general formulation of the grounding problem, 3 variable domains must be considered: $\Gamma = \{\text{symbolic actions and objects\}}$, which represents what phrases may be grounded to, $\Lambda = \{\text{English phrases}\}$, which represents what phrases natural language sentences may be composed of, and $\Upsilon = \Gamma \times \{\text{object attributes}\} $, which represents a model of the world in which phrases may be grounded.\\
-\indent Using these domains, it is possible to formulate the general grounding problem as a probability maximization problem, shown in Equation~\ref{eq:max_ground_prob},
+The work in this paper falls within the field of natural language grounding, which addresses the problem of correctly determining how phrases relate to the real world (e.g. the phrase ``go to the cube'' means approaching a physical cube).
+% Before proceeding further, one must define the domains over which the grounding problem may be solved.
+In the general formulation of the grounding problem, three sets must be considered: ${\Gamma = \{\text{symbolic actions and objects\}}}$ is the set of groundings, which represents what phrases may be grounded to; ${\Lambda = \{\text{English phrases}\}}$ is the set of phrases, which represents what phrases natural language sentences may be composed of; and ${\Upsilon = \Gamma^O \times \{\text{object attributes}\} }$ is the cartesian product of the set of objects (i.e. $\Gamma^O \subset \Gamma$) and the object attributes (e.g. color, location), which represents the world model in which the phrases may be grounded. 
+
+Given a natural language command $\boldsymbol{\lambda}$, which is a vector of phrases from the set $\Lambda$ and has a length of $|\boldsymbol{\lambda}|$, 
+%\indent Using these domains, it is possible to formulate 
+the general grounding problem can be formulated as a probability maximization problem%, shown in Equation~\ref{eq:max_ground_prob},
 \begin{equation}
-\boldsymbol{\gamma}^* = \argmax_{\boldsymbol{\gamma} \epsilon \Gamma^{|\boldsymbol{\lambda}|}} p(\boldsymbol{\gamma}|\boldsymbol{\lambda},\Upsilon),
+\boldsymbol{\gamma}^* = \argmax_{\boldsymbol{\gamma} \in \Gamma^{|\boldsymbol{\lambda}|}} p(\boldsymbol{\gamma}|\boldsymbol{\lambda},\Upsilon),
 \label{eq:max_ground_prob}
 \end{equation}
+where $\boldsymbol{\gamma} \in \Gamma^{|\boldsymbol{\lambda}|}$ is a vector of groundings with a length of $|\boldsymbol{\lambda}|$, and $\Upsilon$ denotes the world model. 
+%$\gamma \in \Gamma$, $\boldsymbol{\lambda}$ as a vector of phrases $\lambda \in \Lambda$ and world model $\Upsilon$. 
+In this formulation, the optimal vector of groundings $\boldsymbol{\gamma}^*$ is the one with maximum likelihood, given a command $\boldsymbol{\lambda}$ and a world model $\Upsilon$.
 
-\noindent for $\boldsymbol{\gamma}$ defined as a vector of groundings $\gamma \in \Gamma$, $\boldsymbol{\lambda}$ as a vector of phrases $\lambda \in \Lambda$ and world model $\Upsilon$. 
-This formulation states that the optimal grounding $\boldsymbol{\gamma}^*$ is the vector of groundings that maximizes the likelihood of that vector of groundings, given language $\boldsymbol{\lambda}$ and a model of the world $\Upsilon$.\\
-\indent While the general formulation allows any possible grounding, phrase, or world model, the domains of $\Gamma$, $\Lambda$, and $\Upsilon$ are shrunk in existing solutions to the grounding problem.
-For example, rather than allowing $\Lambda$ to include all words, many systems only consider words that have appeared in training examples.\\
-\indent Specifically, consider the Distributed Correspondence Graph (DCG), which makes 5 changes to the general grounding problem formulation.
-First, DCG discards the notion of grounding to specific actions or objects by instead only grounding to constraints relative to known objects (e.g. the area near a cube) and then passing the constraints to a motion planner.
-Second, DCG only allows phrases composed entirely of words that have already been encountered in training.
-Third, DCG only considers perceived objects rather than a full model of the world including unobserved objects.
+In practice, the domains of $\Gamma$, $\Lambda$, and $\Upsilon$ in \eqref{eq:max_ground_prob} typically include elements from previously seen examples. % While the general formulation allows any possible grounding, phrase, or world model, the domains of $\Gamma$, $\Lambda$, and $\Upsilon$ are shrunk in existing solutions to the grounding problem.
+For example, rather than allowing the set of phrases $\Lambda$ to include all words in a dictionary, $\Lambda$ is generally assumed to only contain words that have appeared in the training examples. Moreover, solving \eqref{eq:max_ground_prob} is a hard \textcolor{blue}{combinatorial?} optimization problem due to the diversity in language and world.
+% even though limited sets ($\Gamma$, $\Lambda$, and $\Upsilon$) are considered. 
+One way to tackle this issue is to construct probabilistic graphical models based on the linguistic structure of the commands. For example, the Generalized Grounding Graph (G3) model \textcolor{blue}{[REF]} is a factor graph that is trained from a corpus of labeled examples to ground language commands with objects, locations, and paths.  
+
+An alternative model is the Distributed Correspondence Graph (DCG) \textcolor{blue}{[REF]}, which infers the most likely set of planning constraints from language commands (rather than grounding phrases to particular actions, objects, or paths as in G3 model). In particular, DCG has the following properties:  
+First, DCG decouples motion planning from the grounding problem. To this end, it discards the notion of grounding to specific actions or objects by instead only grounding to constraints relative to known objects (e.g. the area near a cube). Then, it passes the constraints to a motion planner.
+Second, DCG allows only the phrases composed entirely of the words that have already been encountered in training.
+Third, DCG only considers the perceived objects rather than a full model of the world including the unobserved objects.
 Fourth, ternary correspondence variables $\phi_{ij}$ are introduced to represent whether the $i^\text{th}$ phrase $\lambda_i$ from the overall command $\boldsymbol{\lambda}$ corresponds to a grounding $\gamma_{ij}$.
-For a given phrase $\lambda_i$, $\phi_{ij}$ is set to Active if $\lambda_i$ corresponds to constraint $\gamma_{ij}$, Inverted if $\lambda_i$ corresponds to the opposite of $\gamma_{ij}$, or Inactive if $\lambda_i$ has no bearing on $\gamma_{ij}$.
+For a given phrase $\lambda_i$, $\phi_{ij}$ is set to \emph{Active} if $\lambda_i$ refers to constraint $\gamma_{ij}$ (e.g. the area near the cube), \emph{Inverted} if $\lambda_i$ refers to the opposite of $\gamma_{ij}$ (e.g. the area far from the cube), or \emph{Inactive} if $\lambda_i$ has no bearing on $\gamma_{ij}$ (e.g. the area near a sphere).
 Fifth, for the sake of computational efficiency, the overall inference is factored using conditional independence according to the structure of the parse tree of $\boldsymbol{\lambda}$.
-These changes are formally shown in Equation~\ref{eq:dcg_factored1},
+
+Accordingly, the optimization problem solved over a DCG model becomes
+%These changes are formally shown in Equation~\ref{eq:dcg_factored1},
 \begin{equation}
 \label{eq:dcg_factored1}
 \begin{split}
-\boldsymbol{\phi}^* = \argmax_{\boldsymbol{\phi} \epsilon \Phi^{|\boldsymbol{\lambda}|}} \prod_{ij} p(\phi_{ij}|\gamma_{ij},\lambda_i,\Gamma_{c_{ij}} , \Upsilon),
+\boldsymbol{\phi}^* = \argmax_{\textcolor{blue}{\phi_{ij} \in \Phi}} \prod_{i}^{|\boldsymbol{\lambda}|} \prod_{j}^{|\Phi_i|} p(\phi_{ij}|\gamma_{ij},\lambda_i,\Gamma_{c_{ij}} , \Upsilon_{KP}),
 \end{split}
 \end{equation}
-where $\Gamma_{c_{ij}}$ is the set of child groundings of $\gamma_{ij}$.
-Finally, the domains are redefined for $\gamma \in C=\{\text{Constraints}\}$, $\lambda \in \Lambda_{KN}=\{\text{phrases with known nouns}\}$, and $\Upsilon \in \{\text{object attributes}\} \times \Gamma_{KP}$ for $\Gamma_{KP} = \{\text{known perceived symbolic objects}\}$.\\
-\indent As stated previously, DCG assumes conditional independence among groundings, given $\Gamma_{c_{ij}}$.
-Child groundings $\Gamma_{c_i}$ may be formally defined as the set of groundings for the leftmost descendants of the immediate children (barring itself) of the parent of phrase $i$ in the parse tree of the natural language command.
-This is best illustrated by way of example in Figure~\ref{fig:parse_tree}, showing the parse tree of a simple command, and Figure~\ref{fig:dcg_plates}, showing the corresponding DCG graphical model. 
+where $\lambda_i \in \Lambda_{KN}$ is the $i^{th}$ phrase in command $\boldsymbol{\lambda}$ and $\Lambda_{KN}$ is the set of phrases with known (previously seen) words; $\Phi_i$ is the set of correspondence variables of $\lambda_i$, $\phi_{ij} \in \Phi_i$ is the $j^{th}$ correspondence variable of $\lambda_i$; $\gamma_{ij}$ is the $j^{th}$ grounding of $\lambda_i$; $\Upsilon_{KP} = \{\text{object attributes}\} \times \Gamma_{KP}$ is the world model consisting of the object attributes and the set of known perceived symbolic objects $\Gamma_{KP}$; and  $\Gamma_{c_{ij}}$ is the set of child groundings of $\gamma_{ij}$. \textcolor{blue}{Note that $\Gamma_{c_{ij}}$ may be formally defined as the set of groundings for the leftmost descendants of the immediate children (barring itself) of the parent of phrase $\lambda_i$ in the parse tree of the natural language command.} 
 
-\begin{figure}
-\centering
-\includegraphics[width=7cm,height=3cm]{parse_tree}
-\label{fig:parse_tree}
-\caption{Parse tree for the command ``move to the cube''}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=7cm,height=3cm]{dcg_plates}
-\label{fig:dcg_plates}
-\caption{DCG graphical model for the parse tree in Figure~\ref{fig:parse_tree}}
-\end{figure}
-
-In this example, the child grounding of the phrase ``move'' is the grounding for the phrase ``to.''
-Similarly, the child grounding of the phrase ``to'' is the grounding for the phrase ``the cube'' (determiners such as ``the'' may be collapsed into their nouns).
-Thus, in this example, each grounding has exactly one child grounding, yielding the inter-plate structure in Figure~\ref{fig:dcg_plates}.
+For example, consider Figure~\ref{fig:parse_tree} that shows the parse tree of a simple command, and Figure~\ref{fig:dcg_plates} that shows the corresponding DCG graphical model. The child grounding of the phrase ``move'' is the grounding for the phrase ``to.'' Similarly, the child grounding of the phrase ``to'' is the grounding for the phrase ``the cube'' (determiners such as ``the'' may be collapsed into their nouns). Thus, in this example, each grounding has exactly one child grounding, yielding the inter-plate structure in Figure~\ref{fig:dcg_plates}.
 Examining the parse tree also reveals why the factorization in Equation~\ref{eq:dcg_factored1} is reasonable: the meaning ``move'' should be conditionally independent of the noun ``cube'' given the prepositional phrase.
-After all, the correct grounding of the word ``move'' is an action that does not depend on whether the target is a cube or a sphere, but it does depend on the position of the cube.\\
-\indent Finally, one must consider the factor function $\Psi$ within each plate that determines the most likely configuration of each $\phi_{ij}$ given $\lambda_i$, $\gamma_{ij}$, and $\Gamma_{c_{ij}}$.
-In order to expose the use of $\Psi$, one may rewrite Equation~\ref{eq:dcg_factored1} as Equation~\ref{eq:llm1}, \\
+After all, the correct grounding of the word ``move'' is an action that does not depend on whether the target is a cube or a sphere, but it does depend on the position of the cube.
+%Finally, the domains are redefined for $\gamma \in C=\{\text{Constraints}\}$, $\lambda \in \Lambda_{KN}=\{\text{phrases with known nouns}\}$, and $\Upsilon \in \{\text{object attributes}\} \times \Gamma_{KP}$ for $\Gamma_{KP} = \{\text{known perceived symbolic objects}\}$.\\
+%\indent As stated previously, DCG assumes conditional independence among groundings, given $\Gamma_{c_{ij}}$.
+%Child groundings $\Gamma_{c_i}$ may be formally defined as the set of groundings for the leftmost descendants of the immediate children (barring itself) of the parent of phrase $i$ in the parse tree of the natural language command.
+
+
+\begin{figure}[b!]
+\centering
+\includegraphics[width=0.5\columnwidth]{parse_tree}
+\caption{Parse tree for the command ``move to the cube''}
+\label{fig:parse_tree}
+\end{figure}
+
+\begin{figure}[b!]
+\centering
+\includegraphics[width=0.7\columnwidth]{dcg_plates}
+\caption{DCG graphical model for the parse tree in Figure~\ref{fig:parse_tree}}
+\label{fig:dcg_plates}
+\end{figure}
+
+Finally, one must consider the factor function $\Psi : \Phi \times \Gamma \times \Lambda \times \Gamma \times \Upsilon \rightarrow
+ \mathbb{R}$ within each plate that determines the most likely configuration of each $\phi_{ij} \in \Phi$ given $\gamma_{ij} \in \Gamma$, $\lambda_i \in \Lambda$, $\Gamma_{c_{ij}} \subset \Gamma$, and $\Upsilon_{KP} \subset \Upsilon$. Accordingly, one may rewrite \eqref{eq:dcg_factored1} as follows:
+%In order to expose the use of $\Psi$, one may rewrite Equation~\ref{eq:dcg_factored1} as Equation~\ref{eq:llm1}, \\
 \begin{equation}
-\boldsymbol{\phi}^* = \argmax_{\boldsymbol{\phi} \epsilon \Phi^{|\boldsymbol{\lambda}|}} \frac{1}{Z} \prod_{ij} \Psi(\phi_i,\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon),
+\boldsymbol{\phi}^* = \argmax_{\textcolor{blue}{\phi_{ij} \in \Phi}} \frac{1}{Z} \prod_{i}^{\boldsymbol{|\lambda|}} \prod_{j}^{|\Phi_i|} \Psi(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP}),
 \label{eq:llm1}
 \end{equation}
-where $\Psi$ is set as a log-linear model (LLM) composed of a weighted combination of hand-coded binary function, as shown in Equation~\ref{eq:llm2}:
+where $\Psi$ is a log-linear model (LLM) composed of a weighted combination of hand-coded binary functions as follows:
 \begin{equation}
-\Psi(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon) = \exp \Big( \sum_{f \epsilon F} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon) \Big)
-\label{eq:llm2}.
+\Psi(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP}) = \exp \Big( \sum_{f \epsilon F} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP}) \Big),
+\label{eq:llm2}
 \end{equation}
-\indent Each binary function $f$ belongs to a set of hand-coded binary features that evaluate specific traits about a grounding (e.g. whether the word ``cube'' appears in $\boldsymbol{lambda}$).
-The weights $\mu_f$ used to combine these features are learned in a training procedure based on the Limited-memory Broyden-Feltcher-Goldfarb-Shanno algorithm to generate a more nuanced function that evaluates how likely a phrase is to correspond to a grounding.
+where each binary function $f$ belongs to a set of hand-coded binary features that evaluate specific traits about a grounding (e.g. whether the word ``cube'' appears in $\boldsymbol{\lambda}$), and $\mu_f$ is the weighting of each $f$. In this work,
+the weights $\mu_f$ are learned in a training procedure via the Limited-memory Broyden-Fletcher-Goldfarb-Shanno algorithm.% to generate a more nuanced function that evaluates how likely a phrase is to correspond to a grounding.
