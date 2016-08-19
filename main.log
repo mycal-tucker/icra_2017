@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 AUG 2016 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 AUG 2016 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1623,11 +1623,11 @@ File: images/case1.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/case1.pdf used on input line 103.
 (pdftex.def)             Requested size: 115.48781pt x 94.53552pt.
 
-<images/case2.pdf, id=124, 317.8254pt x 338.26578pt>
+<images/case2.pdf, id=124, 317.8253pt x 338.26476pt>
 File: images/case2.pdf Graphic file (type pdf)
  <use images/case2.pdf>
 Package pdftex.def Info: images/case2.pdf used on input line 109.
-(pdftex.def)             Requested size: 120.40321pt x 128.14488pt.
+(pdftex.def)             Requested size: 120.40321pt x 128.1445pt.
 
 
 Package resizegather Warning: Equation line 1 is too large by 67.7335pt
@@ -1784,7 +1784,7 @@ st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on main.pdf (6 pages, 881283 bytes).
+Output written on main.pdf (6 pages, 881305 bytes).
 PDF statistics:
  387 PDF objects out of 1000 (max. 8388607)
  324 compressed objects within 4 object streams
