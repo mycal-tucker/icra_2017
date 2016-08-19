@@ -1,5 +1,7 @@
 \section{Technical Approach} \label{sec:technical}
-\subsection{Symbol for Unknown}
+In the previous section, it has been stated that the DCG model can be efficiently used in grounding problems where the objects and phrases are known and the phrases are grounded to only perceived objects. In this paper, the proposed model DCG-UPUP-Away enables the solution of a more generalized grounding problem such that 1) the phrases and objects may be known or unknown, and 2) the phrases may be grounded to objects that are out of perception. To this end, the following sections detail how to ground unknown phrases or objects, how to incrementally learn new objects and phrases, how to hypothesize groundings out of perception, and how to involve adjective attributes into grounding to avoid ambiguities.   
+
+\subsection{Symbol for Unknown \textcolor{blue}{[DA: Grounding Unknown Phrases or Objects]}}
 here I introduce the notion of an unknown symbol
 
 Here's the factored equation:
@@ -71,6 +73,47 @@ Then I can include this pseudocode:\\
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
+
+\begin{figure*}
+\centering
+\begin{subfigure}[t]{0.235\textwidth}
+\centering
+\includegraphics[width=\textwidth]{dcg.pdf}
+\caption{The DCG model}
+\end{subfigure}
+~
+\begin{subfigure}[t]{0.31\textwidth}
+\centering
+\includegraphics[width=\textwidth]{dcg_upup.pdf}
+\caption{The DCG-UPUP model}
+\end{subfigure}
+~
+\begin{subfigure}[t]{0.4\textwidth}
+\centering
+\includegraphics[width=\textwidth]{dcg_upup_away.pdf}
+\caption{The DCG-UPUP-Away model}
+\end{subfigure}
+\caption{The graphical models constructed for the command ``\emph{move to the cone}".}
+\end{figure*}
+
+\begin{figure}
+\centering
+\begin{subfigure}[t]{0.47\columnwidth}
+\centering
+\includegraphics[width=\textwidth]{case1.pdf}
+\caption{Without explicit unknown symbols}
+\end{subfigure}
+~
+\begin{subfigure}[t]{0.49\columnwidth}
+\centering
+\includegraphics[width=\textwidth]{case2.pdf}
+\caption{With explicit unknown symbols}
+\end{subfigure}
+
+\caption{Factor graph representations. Input instruction is parsed into $N$ phrases where $\lambda_l$ represents a child phrase of parent phrase $\lambda_i$. Superscripts $K$ and $U$ denote known and unknown variables, respectively.}
+\end{figure}
+
+
 
 \subsection{Adjective-Attribute Heuristics}
 Here I describe how color can be used to bias the correct grounding.
