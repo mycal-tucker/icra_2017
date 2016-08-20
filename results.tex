@@ -42,14 +42,89 @@ In fact, mean grounding accuracy remains between 70\% and 90\% across all iterat
 \end{figure}
 
 \indent Although the overall grounding accuracy remains relatively constant, the underlying behavior within DCG-UPUP-Away changes over the course of a trial.
-In Figure~\ref{fig:g_acc_split}, we plot 3 curves, showing what fraction of correctly grounded phrases refer to known objects, unknown objects, or learned objects as a function of iteration number.
+In Figure~\ref{plot:g_acc_split}, we plot 3 curves, showing what fraction of correctly grounded phrases refer to known objects, unknown objects, or learned objects as a function of iteration number.
 In the first iteration, nearly 70\% of correctly grounded commands refer to known objects, but by the 10$^\text{th}$ iteration that number has fallen to nearly 10\%, replaced almost entirely by correctly grounding to learned objects.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=8.5cm]{learning}
-\caption{this is split up (must replot well)}
-\label{fig:g_acc_split}
+\begin{figure}[ht]
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+	title={TODO title},
+	xlabel={Iteration Number},
+    ylabel={Grounding Accuracy Rate},
+    xmin=0.9, xmax=10.1,
+    ymin=0, ymax=0.7,
+    xtick={1,2,3,4,5,6,7,8,9,10},
+    ytick={0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0},
+    legend pos=south east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+%known groundings
+\addplot[
+	color=blue,
+    mark=square,
+    ]
+    coordinates{
+        (1,0.348)
+        (2,0.36)
+        (3,0.542)
+        (4,0.5)
+        (5,0.259)
+        (6,0.417)
+        (7,0.520)
+        (8,0.318)
+        (9,0.480)
+        (10,0.375)
+    };
+    \addlegendentry{known groundings}
+    
+%unknown data
+\addplot[
+	color=red,
+    mark=square,
+    error bars/.cd,
+    y dir=both, y explicit
+    ]
+    coordinates{
+        (1,0.652)
+        (2,0.64)
+        (3,0.458)
+        (4,0.455)
+        (5,0.556)
+        (6,0.5)
+        (7,0.32)
+        (8,0.364)
+        (9,0.2)
+        (10,0.125)
+    };
+    \addlegendentry{unknown groundings}
+    
+%learned data
+\addplot[
+	color=green,
+    mark=square,
+    error bars/.cd,
+    y dir=both, y explicit
+    ]
+    coordinates{
+        (1,0)
+        (2,0)
+        (3,0)
+        (4,0.045)
+        (5,0.085)
+        (6,0.083)
+        (7,0.16)
+        (8,0.318)
+        (9,0.32)
+        (10,0.5)
+    };
+    \addlegendentry{learned groundings}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\caption{Here's a temporary caption}
+\label{plot:g_acc_split}
 \end{figure}
 
 
