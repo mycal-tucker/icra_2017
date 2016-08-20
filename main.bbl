@@ -1,0 +1,107 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{g3}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=TS}{%
+         family={Tellex},
+         family_i={T\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kollar},
+         family_i={K\bibinitperiod},
+         given={T.},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dickerson},
+         family_i={D\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Walter},
+         family_i={W\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Banerjee},
+         family_i={B\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Teller},
+         family_i={T\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Roy},
+         family_i={R\bibinitperiod},
+         given={N.},
+         given_i={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TSKTDS+1}
+    \strng{fullhash}{TSKTDSWMBATSRN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{National Conference on Artificial Intelligence}
+    \field{title}{Understanding Natural Language Commands for Robotic
+  Navigation and Mobile Manipulation}
+    \field{year}{2011}
+  \endentry
+
+  \entry{dcg}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=HT}{%
+         family={Howard},
+         family_i={H\bibinitperiod},
+         given={T.},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tellex},
+         family_i={T\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Roy},
+         family_i={R\bibinitperiod},
+         given={N.},
+         given_i={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HTTSRN1}
+    \strng{fullhash}{HTTSRN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{In \textit{International Conference on Robotics and
+  Automation}}
+    \field{title}{A Natural Language Planner Interface for Mobile Manipulators}
+    \field{month}{06}
+    \field{year}{2014}
+  \endentry
+\endsortlist
+\endinput
