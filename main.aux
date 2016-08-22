@@ -30,21 +30,18 @@
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:intro_pic}{{1}{1}{An illustration of the proposed model DCG-UPUP-Away, which has been trained only with cubes, spheres, and cylinders; and it may ground phrases to known perceived objects (1), unknown perceived objects (2), known hypothesized objects (3), or unknown hypothetical objects (4).\relax }{figure.caption.1}{}}
 \newlabel{fig:intro_pic@cref}{{[figure][1][]1}{1}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {II}Background}{1}{section.2}}
-\newlabel{sec:background}{{II}{1}{Background}{section.2}{}}
-\newlabel{sec:background@cref}{{[section][2][]II}{1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {II}Background}{2}{section.2}}
+\newlabel{sec:background}{{II}{2}{Background}{section.2}{}}
+\newlabel{sec:background@cref}{{[section][2][]II}{2}}
 \newlabel{eq:max_ground_prob}{{1}{2}{Background}{equation.2.1}{}}
 \newlabel{eq:max_ground_prob@cref}{{[equation][1][]1}{2}}
 \newlabel{eq:dcg_factored1}{{2}{2}{Background}{equation.2.2}{}}
 \newlabel{eq:dcg_factored1@cref}{{[equation][2][]2}{2}}
+\newlabel{eq:llm1}{{3}{2}{Background}{equation.2.3}{}}
+\newlabel{eq:llm1@cref}{{[equation][3][]3}{2}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Parse tree for the command ``move to the cube''\relax }}{2}{figure.caption.2}}
 \newlabel{fig:parse_tree}{{2}{2}{Parse tree for the command ``move to the cube''\relax }{figure.caption.2}{}}
 \newlabel{fig:parse_tree@cref}{{[figure][2][]2}{2}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces DCG graphical model for the parse tree in Figure\nobreakspace  {}\ref  {fig:parse_tree}\relax }}{2}{figure.caption.3}}
-\newlabel{fig:dcg_plates}{{3}{2}{DCG graphical model for the parse tree in Figure~\ref {fig:parse_tree}\relax }{figure.caption.3}{}}
-\newlabel{fig:dcg_plates@cref}{{[figure][3][]3}{2}}
-\newlabel{eq:llm1}{{3}{3}{Background}{equation.2.3}{}}
-\newlabel{eq:llm1@cref}{{[equation][3][]3}{3}}
 \newlabel{eq:llm2}{{4}{3}{Background}{equation.2.4}{}}
 \newlabel{eq:llm2@cref}{{[equation][4][]4}{3}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {III}Technical Approach}{3}{section.3}}
@@ -55,6 +52,9 @@
 \newlabel{eq:dcg_upup_llm1@cref}{{[equation][5][]5}{3}}
 \newlabel{eq:dcg_upup_llm2}{{7}{3}{Symbol for Unknown \textcolor {blue}{[DA: Grounding Unknown Phrases or Objects]}}{equation.3.7}{}}
 \newlabel{eq:dcg_upup_llm2@cref}{{[equation][7][]7}{3}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces DCG graphical model for the parse tree in Figure\nobreakspace  {}\ref  {fig:parse_tree}\relax }}{3}{figure.caption.3}}
+\newlabel{fig:dcg_plates}{{3}{3}{DCG graphical model for the parse tree in Figure~\ref {fig:parse_tree}\relax }{figure.caption.3}{}}
+\newlabel{fig:dcg_plates@cref}{{[figure][3][]3}{3}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {III-B}Incremental Unsupervised Learning}{3}{subsection.3.2}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {III-C}Hypothesized Groundings out of Perception}{3}{subsection.3.3}}
 \newlabel{eq:dcg_upup_away_llm1}{{8}{3}{Hypothesized Groundings out of Perception}{equation.3.8}{}}
@@ -64,9 +64,9 @@
 \@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces My algorithm\relax }}{3}{algorithm.1}}
 \newlabel{alg:dcg_upup_away}{{1}{3}{My algorithm\relax }{algorithm.1}{}}
 \newlabel{alg:dcg_upup_away@cref}{{[algorithm][1][]1}{3}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {III-D}Adjective-Attribute Heuristics}{3}{subsection.3.4}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The graphical models constructed for the command ``\emph  {move to the cone}".\relax }}{4}{figure.caption.4}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Factor graph representations. Input instruction is parsed into $N$ phrases where $\lambda _l$ represents a child phrase of parent phrase $\lambda _i$. Superscripts $K$ and $U$ denote known and unknown variables, respectively.\relax }}{4}{figure.caption.5}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {III-D}Adjective-Attribute Heuristics}{4}{subsection.3.4}}
 \newlabel{eq:color_llm2}{{15}{4}{Adjective-Attribute Heuristics}{equation.3.15}{}}
 \newlabel{eq:color_llm2@cref}{{[equation][15][]15}{4}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {IV}Evaluation}{4}{section.4}}
@@ -77,14 +77,13 @@
 \newlabel{fig:amt}{{6}{5}{A simulated world with a highlighted object presented on Amazon Mechanical Turk, labeled by a user as ``Move to the red fire hydrant.''\relax }{figure.caption.6}{}}
 \newlabel{fig:amt@cref}{{[figure][6][]6}{5}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {IV-B}Grounding Accuracy}{5}{subsection.4.2}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {IV-C}Learned Symbols}{5}{subsection.4.3}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces this is the overall grounding accuracy\relax }}{5}{figure.caption.7}}
 \newlabel{fig:g_acc}{{7}{5}{this is the overall grounding accuracy\relax }{figure.caption.7}{}}
 \newlabel{fig:g_acc@cref}{{[figure][7][]7}{5}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces this is split up (must replot well)\relax }}{5}{figure.caption.8}}
 \newlabel{fig:g_acc_split}{{8}{5}{this is split up (must replot well)\relax }{figure.caption.8}{}}
 \newlabel{fig:g_acc_split@cref}{{[figure][8][]8}{5}}
-\abx@aux@refcontextdefaultsdone
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {IV-C}Learned Symbols}{5}{subsection.4.3}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces this is how we show that we learn symbols. I will update this label (and caption) of this figure. also must use std error bars instead of variance\relax }}{6}{figure.caption.9}}
 \newlabel{fig:symbols}{{9}{6}{this is how we show that we learn symbols. I will update this label (and caption) of this figure. also must use std error bars instead of variance\relax }{figure.caption.9}{}}
 \newlabel{fig:symbols@cref}{{[figure][9][]9}{6}}
@@ -99,3 +98,4 @@
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{6}{section.6}}
 \newlabel{sec:conclusion}{{VI}{6}{Conclusion}{section.6}{}}
 \newlabel{sec:conclusion@cref}{{[section][6][]VI}{6}}
+\abx@aux@refcontextdefaultsdone
