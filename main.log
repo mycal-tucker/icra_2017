@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 AUG 2016 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 AUG 2016 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1515,15 +1515,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
 
 (./abstract.tex)
 No file main.nls.
-(./introduction.tex
-
-LaTeX Warning: Reference `sec:results' on page 1 undefined on input line 20.
-
-<images/intro_pic.png, id=71, 535.7616pt x 440.3652pt>
+(./introduction.tex <images/intro_pic.png, id=72, 535.7616pt x 440.3652pt>
 File: images/intro_pic.png Graphic file (type png)
 
 <use images/intro_pic.png>
-Package pdftex.def Info: images/intro_pic.png used on input line 25.
+Package pdftex.def Info: images/intro_pic.png used on input line 28.
 (pdftex.def)             Requested size: 241.84842pt x 198.78741pt.
 ) (./background.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 5.
@@ -1541,7 +1537,7 @@ Underfull \hbox (badness 2376) in paragraph at lines 3--6
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./images/intro_pic.png>] <images/parse_tree.jpg, id=93, 498.36188pt x 298.615
+ <./images/intro_pic.png>] <images/parse_tree.jpg, id=92, 498.36188pt x 298.615
 63pt>
 File: images/parse_tree.jpg Graphic file (type jpg)
 
@@ -1549,7 +1545,7 @@ File: images/parse_tree.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/parse_tree.jpg used on input line 51.
 (pdftex.def)             Requested size: 122.85905pt x 73.61484pt.
 
-<images/dcg_plates.jpg, id=94, 547.54562pt x 356.83313pt>
+<images/dcg_plates.jpg, id=93, 547.54562pt x 356.83313pt>
 File: images/dcg_plates.jpg Graphic file (type jpg)
 
 <use images/dcg_plates.jpg>
@@ -1597,33 +1593,33 @@ Overfull \hbox (67.7335pt too wide) in paragraph at lines 40--40
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 44.
-<images/dcg.pdf, id=118, 350.3686pt x 524.66313pt>
+<images/dcg.pdf, id=119, 350.3686pt x 524.66313pt>
 File: images/dcg.pdf Graphic file (type pdf)
  <use images/dcg.pdf>
 Package pdftex.def Info: images/dcg.pdf used on input line 81.
 (pdftex.def)             Requested size: 118.88445pt x 178.02284pt.
 
-<images/dcg_upup.pdf, id=119, 467.16696pt x 526.35042pt>
+<images/dcg_upup.pdf, id=120, 467.16696pt x 526.35042pt>
 File: images/dcg_upup.pdf Graphic file (type pdf)
 
 <use images/dcg_upup.pdf>
 Package pdftex.def Info: images/dcg_upup.pdf used on input line 87.
 (pdftex.def)             Requested size: 156.82466pt x 176.6919pt.
 
-<images/dcg_upup_away.pdf, id=120, 597.04819pt x 524.96124pt>
+<images/dcg_upup_away.pdf, id=121, 597.04819pt x 524.96124pt>
 File: images/dcg_upup_away.pdf Graphic file (type pdf)
 
 <use images/dcg_upup_away.pdf>
 Package pdftex.def Info: images/dcg_upup_away.pdf used on input line 93.
 (pdftex.def)             Requested size: 202.3529pt x 177.92374pt.
 
-<images/case1.pdf, id=121, 305.97522pt x 250.46474pt>
+<images/case1.pdf, id=122, 305.97522pt x 250.46474pt>
 File: images/case1.pdf Graphic file (type pdf)
  <use images/case1.pdf>
 Package pdftex.def Info: images/case1.pdf used on input line 103.
 (pdftex.def)             Requested size: 115.48781pt x 94.53552pt.
 
-<images/case2.pdf, id=122, 317.8253pt x 338.26476pt>
+<images/case2.pdf, id=123, 317.8253pt x 338.26476pt>
 File: images/case2.pdf Graphic file (type pdf)
  <use images/case2.pdf>
 Package pdftex.def Info: images/case2.pdf used on input line 109.
@@ -1653,7 +1649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-<images/amt.jpg, id=139, 372.39125pt x 201.25188pt>
+<images/amt.jpg, id=140, 372.39125pt x 201.25188pt>
 File: images/amt.jpg Graphic file (type jpg)
  <use images/amt.jpg>
 Package pdftex.def Info: images/amt.jpg used on input line 20.
@@ -1664,7 +1660,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4 <./images/dcg.pdf> <./images/dcg_upup.pdf> <./images/dcg_upup_away.pdf> <./i
 mages/case1.pdf> <./images/case2.pdf>]
-<images/g_acc.jpg, id=285, 349.80687pt x 301.125pt>
+<images/g_acc.jpg, id=286, 349.80687pt x 301.125pt>
 File: images/g_acc.jpg Graphic file (type jpg)
  <use images/g_acc.jpg>
 Package pdftex.def Info: images/g_acc.jpg used on input line 39.
@@ -1673,7 +1669,7 @@ Package pdftex.def Info: images/g_acc.jpg used on input line 39.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/learning.jpg, id=287, 235.88126pt x 139.52126pt>
+<images/learning.jpg, id=288, 235.88126pt x 139.52126pt>
 File: images/learning.jpg Graphic file (type jpg)
 
 <use images/learning.jpg>
@@ -1683,7 +1679,7 @@ Package pdftex.def Info: images/learning.jpg used on input line 50.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/symbols_corr.jpg, id=289, 372.39125pt x 302.12875pt>
+<images/symbols_corr.jpg, id=290, 372.39125pt x 302.12875pt>
 File: images/symbols_corr.jpg Graphic file (type jpg)
 
 <use images/symbols_corr.jpg>
@@ -1704,7 +1700,7 @@ Underfull \hbox (badness 1584) in paragraph at lines 71--74
  []
 
 [5 <./images/amt.jpg> <./images/g_acc.jpg> <./images/learning.jpg>]
-<images/hardware_sketch.jpg, id=299, 1282.7925pt x 722.7pt>
+<images/hardware_sketch.jpg, id=300, 1282.7925pt x 722.7pt>
 File: images/hardware_sketch.jpg Graphic file (type jpg)
 
 <use images/hardware_sketch.jpg>
@@ -1742,20 +1738,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 051CB5C590DCF0EE1806A19BC33BEDE5;979.
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 45708 strings out of 493014
- 1036728 string characters out of 6133351
+ 45707 strings out of 493014
+ 1036715 string characters out of 6133351
  1500717 words of memory out of 5000000
- 48480 multiletter control sequences out of 15000+600000
+ 48479 multiletter control sequences out of 15000+600000
  46397 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,19n,77p,10392b,724s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1786,10 +1778,10 @@ st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on main.pdf (6 pages, 882378 bytes).
+Output written on main.pdf (6 pages, 881529 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
+ 388 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
  49 named destinations out of 1000 (max. 500000)
  198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
