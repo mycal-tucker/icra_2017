@@ -1,107 +1,32 @@
-% $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.7 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
 
-\sortlist[entry]{none/global/}
-  \entry{g3}{inproceedings}{}
-    \name{author}{7}{}{%
-      {{hash=TS}{%
-         family={Tellex},
-         family_i={T\bibinitperiod},
-         given={S.},
-         given_i={S\bibinitperiod},
-      }}%
-      {{hash=KT}{%
-         family={Kollar},
-         family_i={K\bibinitperiod},
-         given={T.},
-         given_i={T\bibinitperiod},
-      }}%
-      {{hash=DS}{%
-         family={Dickerson},
-         family_i={D\bibinitperiod},
-         given={S.},
-         given_i={S\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Walter},
-         family_i={W\bibinitperiod},
-         given={M.},
-         given_i={M\bibinitperiod},
-      }}%
-      {{hash=BA}{%
-         family={Banerjee},
-         family_i={B\bibinitperiod},
-         given={A.},
-         given_i={A\bibinitperiod},
-      }}%
-      {{hash=TS}{%
-         family={Teller},
-         family_i={T\bibinitperiod},
-         given={S.},
-         given_i={S\bibinitperiod},
-      }}%
-      {{hash=RN}{%
-         family={Roy},
-         family_i={R\bibinitperiod},
-         given={N.},
-         given_i={N\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TSKTDS+1}
-    \strng{fullhash}{TSKTDSWMBATSRN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{National Conference on Artificial Intelligence}
-    \field{title}{Understanding Natural Language Commands for Robotic
-  Navigation and Mobile Manipulation}
-    \field{year}{2011}
-  \endentry
+\bibitem{g3}
+S.~Tellex, T.~Kollar, S.~Dickerson, M.~Walter, A.~Banerjee, S.~Teller, and
+  N.~Roy, ``Understanding natural language commands for robotic navigation and
+  mobile manipulation,'' in \emph{National Conference on Artificial
+  Intelligence}, 2011.
 
-  \entry{dcg}{misc}{}
-    \name{author}{3}{}{%
-      {{hash=HT}{%
-         family={Howard},
-         family_i={H\bibinitperiod},
-         given={T.},
-         given_i={T\bibinitperiod},
-      }}%
-      {{hash=TS}{%
-         family={Tellex},
-         family_i={T\bibinitperiod},
-         given={S.},
-         given_i={S\bibinitperiod},
-      }}%
-      {{hash=RN}{%
-         family={Roy},
-         family_i={R\bibinitperiod},
-         given={N.},
-         given_i={N\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HTTSRN1}
-    \strng{fullhash}{HTTSRN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{In \textit{International Conference on Robotics and
-  Automation}}
-    \field{title}{A Natural Language Planner Interface for Mobile Manipulators}
-    \field{month}{06}
-    \field{year}{2014}
-  \endentry
-\endsortlist
-\endinput
+\bibitem{dcg}
+T.~Howard, S.~Tellex, and N.~Roy, ``A natural language planner interface for
+  mobile manipulators,'' In \textit{International Conference on Robotics and
+  Automation}, June 2014.
+
+\end{thebibliography}
