@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 AUG 2016 11:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 AUG 2016 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,268 +1056,6 @@ LaTeX Info: Redefining \labelcpageref on input line 2230.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen283
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2016/05/14 v3.4 programmable bibliographies (PK/JW/AB)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
-and LuaTeX
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count173
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count174
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write4
-\integerpart=\count175
-\decimalpart=\count176
-)
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
-)
-\c@tabx@nest=\count177
-\c@listtotal=\count178
-\c@listcount=\count179
-\c@liststart=\count180
-\c@liststop=\count181
-\c@citecount=\count182
-\c@citetotal=\count183
-\c@multicitecount=\count184
-\c@multicitetotal=\count185
-\c@instcount=\count186
-\c@maxnames=\count187
-\c@minnames=\count188
-\c@maxitems=\count189
-\c@minitems=\count190
-\c@citecounter=\count191
-\c@savedcitecounter=\count192
-\c@uniquelist=\count193
-\c@uniquename=\count194
-\c@refsection=\count195
-\c@refsegment=\count196
-\c@maxextratitle=\count197
-\c@maxextratitleyear=\count198
-\c@maxextrayear=\count199
-\c@maxextraalpha=\count266
-\c@abbrvpenalty=\count267
-\c@highnamepenalty=\count268
-\c@lownamepenalty=\count269
-\c@maxparens=\count270
-\c@parenlevel=\count271
-\blx@tempcnta=\count272
-\blx@tempcntb=\count273
-\blx@tempcntc=\count274
-\blx@maxsection=\count275
-\blx@maxsegment@0=\count276
-\blx@notetype=\count277
-\blx@parenlevel@text=\count278
-\blx@parenlevel@foot=\count279
-\blx@sectionciteorder@0=\count280
-\labelnumberwidth=\skip57
-\labelalphawidth=\skip58
-\biblabelsep=\skip59
-\bibitemsep=\skip60
-\bibnamesep=\skip61
-\bibinitsep=\skip62
-\bibparsep=\skip63
-\bibhang=\skip64
-\blx@bcfin=\read2
-\blx@bcfout=\write5
-\c@mincomprange=\count281
-\c@maxcomprange=\count282
-\c@mincompwidth=\count283
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-dm.def)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'ieee.dbx' not found.
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count284
-\c@savedafterword=\count285
-\c@annotator=\count286
-\c@savedannotator=\count287
-\c@author=\count288
-\c@savedauthor=\count289
-\c@bookauthor=\count290
-\c@savedbookauthor=\count291
-\c@commentator=\count292
-\c@savedcommentator=\count293
-\c@editor=\count294
-\c@savededitor=\count295
-\c@editora=\count296
-\c@savededitora=\count297
-\c@editorb=\count298
-\c@savededitorb=\count299
-\c@editorc=\count300
-\c@savededitorc=\count301
-\c@foreword=\count302
-\c@savedforeword=\count303
-\c@holder=\count304
-\c@savedholder=\count305
-\c@introduction=\count306
-\c@savedintroduction=\count307
-\c@namea=\count308
-\c@savednamea=\count309
-\c@nameb=\count310
-\c@savednameb=\count311
-\c@namec=\count312
-\c@savednamec=\count313
-\c@translator=\count314
-\c@savedtranslator=\count315
-\c@shortauthor=\count316
-\c@savedshortauthor=\count317
-\c@shorteditor=\count318
-\c@savedshorteditor=\count319
-\c@labelname=\count320
-\c@savedlabelname=\count321
-\c@institution=\count322
-\c@savedinstitution=\count323
-\c@lista=\count324
-\c@savedlista=\count325
-\c@listb=\count326
-\c@savedlistb=\count327
-\c@listc=\count328
-\c@savedlistc=\count329
-\c@listd=\count330
-\c@savedlistd=\count331
-\c@liste=\count332
-\c@savedliste=\count333
-\c@listf=\count334
-\c@savedlistf=\count335
-\c@location=\count336
-\c@savedlocation=\count337
-\c@organization=\count338
-\c@savedorganization=\count339
-\c@origlocation=\count340
-\c@savedoriglocation=\count341
-\c@origpublisher=\count342
-\c@savedorigpublisher=\count343
-\c@publisher=\count344
-\c@savedpublisher=\count345
-\c@language=\count346
-\c@savedlanguage=\count347
-\c@pageref=\count348
-\c@savedpageref=\count349
-\shorthandwidth=\skip65
-\shortjournalwidth=\skip66
-\shortserieswidth=\skip67
-\shorttitlewidth=\skip68
-\shortauthorwidth=\skip69
-\shorteditorwidth=\skip70
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-
-
-Package biblatex Warning: Using fall-back BibTeX(8) backend:
-(biblatex)                functionality may be reduced/unavailable.
-
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count350
-\c@textcitetotal=\count351
-\c@textcitemaxnames=\count352
-\c@biburlnumpenalty=\count353
-\c@biburlucpenalty=\count354
-\c@biburllcpenalty=\count355
-\c@smartand=\count356
-)
-Package biblatex Info: Trying to load natbib compatibility...
-Package biblatex Info: ... file 'blx-natbib.def' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-natbib.def
-File: blx-natbib.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load bibliography style 'ieee'...
-Package biblatex Info: ... file 'ieee.bbx' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
-File: ieee.bbx 2016/05/08 v1.1n biblatex bibliography style
-Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.bbx' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
-File: numeric-comp.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count357
-\c@bbx:relatedtotal=\count358
-))))
-Package biblatex Info: Trying to load citation style 'ieee'...
-Package biblatex Info: ... file 'ieee.cbx' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
-File: ieee.cbx 2016/05/08 v1.1n biblatex citation style
-Package biblatex Info: Trying to load citation style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.cbx' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
-File: numeric-comp.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count359
-\c@cbx@tempcntb=\count360
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\cites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/nomencl/nomencl.sty
-Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen284
-\nom@tempdim=\dimen285
-\nomitemsep=\skip71
-)
-\@nomenclaturefile=\write6
-\openout6 = `main.nlo'.
-
-
-Writing nomenclature file main.nlo
 (/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
@@ -1329,7 +1067,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks39
 \XKV@tempa@toks=\toks40
 )
-\XKV@depth=\count361
+\XKV@depth=\count173
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -1343,36 +1081,40 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box79
 )
-\tc@llx=\dimen286
-\tc@lly=\dimen287
-\tc@urx=\dimen288
-\tc@ury=\dimen289
+\tc@llx=\dimen284
+\tc@lly=\dimen285
+\tc@urx=\dimen286
+\tc@ury=\dimen287
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen290
-\adjbox@Height=\dimen291
-\adjbox@Depth=\dimen292
-\adjbox@Totalheight=\dimen293
+\adjbox@Width=\dimen288
+\adjbox@Height=\dimen289
+\adjbox@Depth=\dimen290
+\adjbox@Totalheight=\dimen291
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count362
+\c@checkoddpage=\count174
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box80
-\sift@deathcycles=\count363
-\@vwid@loff=\dimen294
-\@vwid@roff=\dimen295
+\sift@deathcycles=\count175
+\@vwid@loff=\dimen292
+\@vwid@roff=\dimen293
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
 \@float@every@algorithm=\toks41
-\c@algorithm=\count364
+\c@algorithm=\count176
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -1381,28 +1123,19 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count365
-\c@ALG@rem=\count366
-\c@ALG@nested=\count367
-\ALG@tlm=\skip72
-\ALG@thistlm=\skip73
-\c@ALG@Lnr=\count368
-\c@ALG@blocknr=\count369
-\c@ALG@storecount=\count370
-\c@ALG@tmpcounter=\count371
-\ALG@tmplength=\skip74
+\c@ALG@line=\count177
+\c@ALG@rem=\count178
+\c@ALG@nested=\count179
+\ALG@tlm=\skip57
+\ALG@thistlm=\skip58
+\c@ALG@Lnr=\count180
+\c@ALG@blocknr=\count181
+\c@ALG@storecount=\count182
+\c@ALG@tmpcounter=\count183
+\ALG@tmplength=\skip59
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-)
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
-)
-\@quotelevel=\count372
-\@quotereset=\count373
-
-(./main.aux)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1422,16 +1155,16 @@ LaTeX Font Info:    ... okay on input line 11.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count374
-\scratchdimen=\dimen296
+\scratchcounter=\count184
+\scratchdimen=\dimen294
 \scratchbox=\box81
-\nofMPsegments=\count375
-\nofMParguments=\count376
+\nofMPsegments=\count185
+\nofMParguments=\count186
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count377
-\MPscratchDim=\dimen297
-\MPnumerator=\count378
-\makeMPintoPDFobject=\count379
+\MPscratchCnt=\count187
+\MPscratchDim=\dimen295
+\MPnumerator=\count188
+\makeMPintoPDFobject=\count189
 \everyMPtoPDFconversion=\toks43
 )
 
@@ -1451,30 +1184,16 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count380
+\c@section@level=\count190
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
 (./main.out) (./main.out)
-\@outlinefile=\write7
-\openout7 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
-Package biblatex Info: No input encoding detected.
-(biblatex)             Assuming 'ascii'.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'ascii'.
-Package biblatex Info: Input encoding 'ascii' specified.
-Package biblatex Info: Data encoding 'ascii' specified.
-(biblatex)             No need to reencode data.
-\openout5 = `main-blx.bib'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 11.
-Package biblatex Info: Reference segment=0 on input line 11.
 LaTeX Font Info:    Try loading font information for U+msa on input line 13.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1513,9 +1232,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
 \OT1/ptm/m/n/8 In-sti-tute of Tech-nol-ogy, Cam-bridge, MA 02139, USA
  []
 
-(./abstract.tex)
-No file main.nls.
-(./introduction.tex <images/intro_pic.png, id=67, 535.7616pt x 440.3652pt>
+(./abstract.tex) (./introduction.tex
+<images/intro_pic.png, id=71, 535.7616pt x 440.3652pt>
 File: images/intro_pic.png Graphic file (type png)
 
 <use images/intro_pic.png>
@@ -1537,128 +1255,180 @@ Underfull \hbox (badness 2376) in paragraph at lines 3--6
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./images/intro_pic.png>] <images/parse_tree.jpg, id=92, 498.36188pt x 298.615
+ <./images/intro_pic.png>] <images/parse_tree.jpg, id=96, 498.36188pt x 298.615
 63pt>
 File: images/parse_tree.jpg Graphic file (type jpg)
 
 <use images/parse_tree.jpg>
 Package pdftex.def Info: images/parse_tree.jpg used on input line 51.
-(pdftex.def)             Requested size: 122.85905pt x 73.61484pt.
+(pdftex.def)             Requested size: 95.82991pt x 57.41647pt.
 
-<images/dcg_plates.jpg, id=93, 547.54562pt x 356.83313pt>
+<images/dcg_plates.jpg, id=97, 547.54562pt x 356.83313pt>
 File: images/dcg_plates.jpg Graphic file (type jpg)
 
 <use images/dcg_plates.jpg>
 Package pdftex.def Info: images/dcg_plates.jpg used on input line 58.
-(pdftex.def)             Requested size: 172.00192pt x 112.09267pt.
- [2 <./images/parse_tree.jpg>]
+(pdftex.def)             Requested size: 135.1457pt x 88.07553pt.
+ [2 <./images/parse_tree.jpg> <./images/dcg_plates.jpg>]
 
-Package resizegather Warning: Equation line 1 is too large by 38.6635pt
-(resizegather)                in environment `equation' on input line 74.
+Package resizegather Warning: Equation line 1 is too large by 90.20447pt
+(resizegather)                in environment `equation' on input line 76.
 
 
-Overfull \hbox (38.6635pt too wide) in paragraph at lines 74--74
+Overfull \hbox (90.20447pt too wide) in paragraph at lines 76--76
 [] 
  []
 
 ) (./technical.tex
-Package resizegather Info: Equation line 1 is too large by 1.37843pt
-(resizegather)             in environment `equation' on input line 19.
 
-Overfull \hbox (1.37843pt too wide) in paragraph at lines 19--19
+Package resizegather Warning: Equation line 1 is too large by 18.4158pt
+(resizegather)                in environment `equation' on input line 34.
+
+
+Overfull \hbox (18.4158pt too wide) in paragraph at lines 34--34
+[] 
+ []
+
+<images/case1.pdf, id=128, 267.97827pt x 245.16393pt>
+File: images/case1.pdf Graphic file (type pdf)
+ <use images/case1.pdf>
+Package pdftex.def Info: images/case1.pdf used on input line 45.
+(pdftex.def)             Requested size: 110.57239pt x 101.15755pt.
+
+<images/case2.pdf, id=129, 317.8253pt x 338.26476pt>
+File: images/case2.pdf Graphic file (type pdf)
+ <use images/case2.pdf>
+Package pdftex.def Info: images/case2.pdf used on input line 52.
+(pdftex.def)             Requested size: 125.31488pt x 133.3731pt.
+
+[3 <./images/case1.pdf> <./images/case2.pdf>]
+
+Package resizegather Warning: Equation line 1 is too large by 52.06212pt
+(resizegather)                in environment `equation' on input line 77.
+
+
+Overfull \hbox (52.06212pt too wide) in paragraph at lines 77--77
 [] 
  []
 
 
-Package resizegather Warning: Equation line 1 is too large by 44.66402pt
-(resizegather)                in environment `equation' on input line 32.
+Package resizegather Warning: Equation line 1 is too large by 54.96126pt
+(resizegather)                in environment `equation' on input line 87.
 
 
-Overfull \hbox (44.66402pt too wide) in paragraph at lines 32--32
+Package resizegather Warning: Equation line 2 is too large by 68.13121pt
+(resizegather)                in environment `equation' on input line 87.
+
+
+Package resizegather Warning: Equation line 3 is too large by 84.2556pt
+(resizegather)                in environment `equation' on input line 87.
+
+
+Overfull \hbox (84.2556pt too wide) in paragraph at lines 87--87
 [] 
  []
 
 
-Package resizegather Warning: Equation line 1 is too large by 67.7335pt
-(resizegather)                in environment `equation' on input line 40.
+Package resizegather Warning: Equation line 1 is too large by 91.8556pt
+(resizegather)                in environment `equation' on input line 93.
 
 
-Package resizegather Warning: Equation line 2 is too large by 31.51674pt
-(resizegather)                in environment `equation' on input line 40.
+Package resizegather Warning: Equation line 2 is too large by 88.13121pt
+(resizegather)                in environment `equation' on input line 93.
 
 
-Overfull \hbox (67.7335pt too wide) in paragraph at lines 40--40
+Package resizegather Warning: Equation line 3 is too large by 107.03331pt
+(resizegather)                in environment `equation' on input line 93.
+
+
+Overfull \hbox (107.03331pt too wide) in paragraph at lines 93--93
 [] 
  []
 
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 44.
-<images/dcg.pdf, id=121, 350.3686pt x 524.66313pt>
+<images/dcg.pdf, id=174, 350.3686pt x 524.66313pt>
 File: images/dcg.pdf Graphic file (type pdf)
  <use images/dcg.pdf>
-Package pdftex.def Info: images/dcg.pdf used on input line 81.
+Package pdftex.def Info: images/dcg.pdf used on input line 100.
 (pdftex.def)             Requested size: 118.88445pt x 178.02284pt.
 
-<images/dcg_upup.pdf, id=122, 467.16696pt x 526.35042pt>
+<images/dcg_upup.pdf, id=175, 467.16696pt x 526.35042pt>
 File: images/dcg_upup.pdf Graphic file (type pdf)
 
 <use images/dcg_upup.pdf>
-Package pdftex.def Info: images/dcg_upup.pdf used on input line 87.
+Package pdftex.def Info: images/dcg_upup.pdf used on input line 107.
 (pdftex.def)             Requested size: 156.82466pt x 176.6919pt.
 
-<images/dcg_upup_away.pdf, id=123, 597.04819pt x 524.96124pt>
+<images/dcg_upup_away.pdf, id=176, 597.04819pt x 524.96124pt>
 File: images/dcg_upup_away.pdf Graphic file (type pdf)
 
 <use images/dcg_upup_away.pdf>
-Package pdftex.def Info: images/dcg_upup_away.pdf used on input line 93.
+Package pdftex.def Info: images/dcg_upup_away.pdf used on input line 114.
 (pdftex.def)             Requested size: 202.3529pt x 177.92374pt.
+Package resizegather Info: Equation line 1 is too large by 1.81888pt
+(resizegather)             in environment `equation' on input line 128.
 
-<images/case1.pdf, id=124, 305.97522pt x 250.46474pt>
-File: images/case1.pdf Graphic file (type pdf)
- <use images/case1.pdf>
-Package pdftex.def Info: images/case1.pdf used on input line 103.
-(pdftex.def)             Requested size: 115.48781pt x 94.53552pt.
-
-<images/case2.pdf, id=125, 317.8253pt x 338.26476pt>
-File: images/case2.pdf Graphic file (type pdf)
- <use images/case2.pdf>
-Package pdftex.def Info: images/case2.pdf used on input line 109.
-(pdftex.def)             Requested size: 120.40321pt x 128.1445pt.
-
-[3 <./images/dcg_plates.jpg>]
-
-Package resizegather Warning: Equation line 1 is too large by 67.7335pt
-(resizegather)                in environment `equation' on input line 130.
-
-
-Package resizegather Warning: Equation line 2 is too large by 31.51674pt
-(resizegather)                in environment `equation' on input line 130.
-
-Package resizegather Info: Equation line 3 is too large by 0.59845pt
-(resizegather)             in environment `equation' on input line 130.
-
-Package resizegather Warning: Equation line 4 is too large by 18.22148pt
-(resizegather)                in environment `equation' on input line 130.
-
-
-Overfull \hbox (67.7335pt too wide) in paragraph at lines 130--130
+Overfull \hbox (1.81888pt too wide) in paragraph at lines 128--128
 [] 
  []
 
+
+Package resizegather Warning: Equation line 1 is too large by 61.18724pt
+(resizegather)                in environment `equation' on input line 135.
+
+
+Package resizegather Warning: Equation line 2 is too large by 68.13121pt
+(resizegather)                in environment `equation' on input line 135.
+
+
+Package resizegather Warning: Equation line 3 is too large by 75.50558pt
+(resizegather)                in environment `equation' on input line 135.
+
+
+Package resizegather Warning: Equation line 4 is too large by 90.36746pt
+(resizegather)                in environment `equation' on input line 135.
+
+
+Overfull \hbox (90.36746pt too wide) in paragraph at lines 135--135
+[] 
+ []
+
+
+Package resizegather Warning: Equation line 1 is too large by 98.08159pt
+(resizegather)                in environment `equation' on input line 142.
+
+
+Package resizegather Warning: Equation line 2 is too large by 88.13121pt
+(resizegather)                in environment `equation' on input line 142.
+
+
+Package resizegather Warning: Equation line 3 is too large by 95.50558pt
+(resizegather)                in environment `equation' on input line 142.
+
+
+Package resizegather Warning: Equation line 4 is too large by 113.14517pt
+(resizegather)                in environment `equation' on input line 142.
+
+
+Overfull \hbox (113.14517pt too wide) in paragraph at lines 142--142
+[] 
+ []
+
+[4]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 148.
 ) (./results.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-<images/amt.jpg, id=140, 372.39125pt x 201.25188pt>
+<images/amt.jpg, id=190, 372.39125pt x 201.25188pt>
 File: images/amt.jpg Graphic file (type jpg)
  <use images/amt.jpg>
 Package pdftex.def Info: images/amt.jpg used on input line 20.
 (pdftex.def)             Requested size: 241.84842pt x 130.70775pt.
 
-[4 <./images/dcg.pdf> <./images/dcg_upup.pdf> <./images/dcg_upup_away.pdf> <./i
-mages/case1.pdf> <./images/case2.pdf>]
-<images/g_acc.jpg, id=285, 349.80687pt x 301.125pt>
+[5 <./images/dcg.pdf> <./images/dcg_upup.pdf> <./images/dcg_upup_away.pdf>]
+<images/g_acc.jpg, id=305, 349.80687pt x 301.125pt>
 File: images/g_acc.jpg Graphic file (type jpg)
  <use images/g_acc.jpg>
 Package pdftex.def Info: images/g_acc.jpg used on input line 39.
@@ -1667,7 +1437,7 @@ Package pdftex.def Info: images/g_acc.jpg used on input line 39.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/learning.jpg, id=287, 235.88126pt x 139.52126pt>
+<images/learning.jpg, id=307, 235.88126pt x 139.52126pt>
 File: images/learning.jpg Graphic file (type jpg)
 
 <use images/learning.jpg>
@@ -1677,7 +1447,7 @@ Package pdftex.def Info: images/learning.jpg used on input line 50.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/symbols_corr.jpg, id=289, 372.39125pt x 302.12875pt>
+<images/symbols_corr.jpg, id=309, 372.39125pt x 302.12875pt>
 File: images/symbols_corr.jpg Graphic file (type jpg)
 
 <use images/symbols_corr.jpg>
@@ -1697,24 +1467,15 @@ Underfull \hbox (badness 1584) in paragraph at lines 71--74
 \OT1/ptm/m/n/10 in-creases. In 10% of tri-als, all 8 sym-bols were cor-
  []
 
-[5 <./images/amt.jpg> <./images/g_acc.jpg> <./images/learning.jpg>]
-<images/hardware_sketch.jpg, id=300, 1282.7925pt x 722.7pt>
+[6 <./images/amt.jpg> <./images/g_acc.jpg> <./images/learning.jpg>]
+<images/hardware_sketch.jpg, id=319, 1282.7925pt x 722.7pt>
 File: images/hardware_sketch.jpg Graphic file (type jpg)
 
 <use images/hardware_sketch.jpg>
 Package pdftex.def Info: images/hardware_sketch.jpg used on input line 97.
 (pdftex.def)             Requested size: 241.84842pt x 136.24475pt.
 ) (./related.tex) (./conclusion.tex)
-Underfull \hbox (badness 2165) in paragraph at lines 29--30
-[]\OT1/ptm/m/n/10 This work was sup-ported in part by the Robotics
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-[6 <./images/symbols_corr.jpg> <./images/hardware_sketch.jpg>]
+(./main.bbl [7 <./images/symbols_corr.jpg> <./images/hardware_sketch.jpg>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1726,33 +1487,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
-[7
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+[8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 051CB5C590DCF0EE1806A19BC33BEDE5;979.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
+(rerunfilecheck)             Checksum: C097F7B79FBB863D00B53902101ADAAD;1002.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 45722 strings out of 493014
- 1037018 string characters out of 6133351
- 1497717 words of memory out of 5000000
- 48491 multiletter control sequences out of 15000+600000
- 46397 words of font info for 100 fonts, out of 8000000 for 9000
+ 39755 strings out of 493014
+ 928787 string characters out of 6133351
+ 1086552 words of memory out of 5000000
+ 42595 multiletter control sequences out of 15000+600000
+ 53291 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,19n,77p,10392b,724s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,19n,77p,10392b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loca
@@ -1760,30 +1514,34 @@ l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
-times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on main.pdf (7 pages, 885878 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on main.pdf (8 pages, 928285 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 330 compressed objects within 4 object streams
- 50 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
