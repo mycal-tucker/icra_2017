@@ -66,7 +66,11 @@ type, is generated. Accordingly, the LLM models are retrained with the expanded 
 %I think that's taken care of in the pseudocode, though.
 
 \subsection{Hypothesized Groundings out of Perception}
-\textcolor{blue}{some intro for hypothetical grounding}
+The previous section presented that the DCG-UPUP model can explicitly represent the unknown phrases and objects. However, its performance is limited since the robot can only ground to the perceived objects. As an extension of this model, we propose the DCG-UPUP-Away, which enables to ground phrases to objects out of perception.
+
+The main process to include hypothetical objects to the model is as follows: after populating a world model by using the sensors of the robot, a single instance of every known object type, as well as one instance of an unknown object, are added to the world model and labeled as hypothetical objects. The resulting graphical model for the DCG-UPUP-Away is illustrated in Fig.~\ref{fig:dcg-upup-away}, where the nouns may ground to 1) known and perceived objects, 2) unknown and perceived objects, 3) known and hypothetical objects, and 4) unknown and hypothetical objects. As a comparison, Fig.~\ref{fig:dcg-upup} illustrates the DCG-UPUP model, where the nouns can be grounded to only known perceived and unknown perceived objects. Moreover, Fig.~\ref{fig:dcg} presents the DCG model where the nouns can be grounded to only known perceived objects.
+
+Similar to \eqref{eq:dcg_upup_llm1}, the factored objective function for the DCG-UPUP-Away model can be written by extending the world model to known perceived, unknown perceived, known hypothetical, and unknown hypothetical objects  (i.e., $\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}$) as follows:
 \begin{equation}
 \boldsymbol{\phi}^* = \argmax_{\phi_{ij} \in \boldsymbol{\phi}} \prod_{i}^{|\boldsymbol\lambda|} \prod_j^{|\Phi_i|} \Psi(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}),
 \label{eq:dcg_upup_away_llm1}
@@ -95,23 +99,50 @@ and $F_H$ is the set of hand-coded binary features to detect if an object is hyp
 \centering
 \includegraphics[width=\textwidth]{dcg.pdf}
 \caption{The DCG model}
+\label{fig:dcg}
 \end{subfigure}
 ~
 \begin{subfigure}[t]{0.31\textwidth}
 \centering
 \includegraphics[width=\textwidth]{dcg_upup.pdf}
 \caption{The DCG-UPUP model}
+\label{fig:dcg-upup}
 \end{subfigure}
 ~
 \begin{subfigure}[t]{0.4\textwidth}
 \centering
 \includegraphics[width=\textwidth]{dcg_upup_away.pdf}
 \caption{The DCG-UPUP-Away model}
+\label{fig:dcg-upup-away}
 \end{subfigure}
 \caption{The graphical models constructed for the command ``\emph{move to the cone}".}
 \end{figure*}
 
-\textcolor{blue}{-the overview of the algorithm}
+\subsection{Adjective-Attribute Heuristics}
+One way to improve the grounding performance of the DCG-UPUP-Away model is to allow the association between the natural language adjectives and the object properties. For example, if there exist two cube type objects in the world, one way to distinguish them from each other is to consider their properties such as color or size. In this section, we present how to include color information into the solution of grounding problem over the DCG-UPUP-Away. To this end, two additional features are introduced: the feature $f_{word}$ detects whether the language command contains a color adjective, and the feature $f_{color}$ checks the color property of an object.     
+
+Note that the factored objective function in this case has exactly the same form as in \eqref{eq:dcg_upup_away_llm1} where each feature function $\Psi(.)$ is defined as follows:
+\begin{equation}
+\Psi(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) = \frac{A_{UHC}}{B_{UHC}}
+\label{eq:color_llm2}
+\end{equation}
+where
+\begin{equation}
+A_{UHC}=\exp \Big( \sum_{f \in F_{\text{DCG}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
+\quad \quad \quad \quad \quad \quad + \sum_{f' \in F_{U}} \mu_{f'} f'(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
+\quad \quad \quad \quad \quad \quad + \sum_{f^{\prime\prime} \in F_{H}} \mu_{f^{\prime\prime}} f^{\prime\prime}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
+\quad \quad \quad \quad \quad \quad + \sum_{f^{\prime\prime\prime} \in F_{C}} \mu_{f^{\prime\prime\prime}} f^{\prime\prime\prime}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \Big), \nonumber
+\end{equation}
+
+\begin{equation}
+B_{UHC}=\sum_{\phi_{ij} \in \{0,1\}}\exp \Big( \sum_{f \in F_{\text{DCG}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
+\quad \quad \quad \quad \quad \quad \quad \quad + \sum_{f' \in F_{U}} \mu_{f'} f'(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
+\quad \quad \quad \quad \quad \quad \quad \quad + \sum_{f^{\prime\prime} \in F_{H}} \mu_{f^{\prime\prime}} f^{\prime\prime}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH})\nonumber \\
+\; \quad \quad \quad \quad \quad \quad \quad \quad + \sum_{f^{\prime\prime\prime} \in F_{C}} \mu_{f^{\prime\prime\prime}} f^{\prime\prime\prime}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \Big), \nonumber
+\end{equation}
+and $F_C$ is the set of hand-coded binary features for detecting color phrases or properties (i.e., $F_C = f_{color} \cup f_{word}$).
+
+Finally, the pseudo-code for grounding and learning new symbols over the DCG-UPUP-Away model is presented in Alg.~\ref{alg:dcg_upup_away}. First, the graphical model $M$ is initialized and trained with the initial set of training data (lines 1-6). Grounding to unknown symbols and/or hypothetical objects are tackled between the lines 7-24. In particular, the world model is updated with the perceived objects (line~8) and then hypothetical objects are added (line~9). The natural language command is entered as an input (line~10). Using the model $M$ with the language command $\boldsymbol\lambda$ and the most recent world model $\Upsilon$, the grounding problem is solved (line~11). If the obtained grounding is hypothetical, then the robot initiates the exploration (line~13); otherwise the robot moves towards the grounded perceived object (line~15). Note that the exploration in this research is considered as the robot rotating in its current location. At the end of solving the grounding problem, a new training file is generated based on the given command $\boldsymbol\lambda$, the resulting grounding $\boldsymbol\gamma^*$, and the current world model $\Upsilon$ (line~16). If there exists an unknown phrase in the given command and the resulting grounding is not hypothetical, then a new object type (or grounding variable) is generated (line~18) and the set of grounding variables as well as the feature sets are updated (lines~19-22). Finally, the newly generated object type $\gamma^\prime$ replaces the unknown object type in training file $T_u$ (line~23), and the model $M$ is retrained with the new set of training data. Consequently, the initially unknown object becomes a known object in the new model $M$ in the further iterations. 
 
 \begin{algorithm}\footnotesize
 \caption{Grounding/Learning over DCG-UPUP-Away}\label{alg:dcg_upup_away}
@@ -137,6 +168,7 @@ and $F_H$ is the set of hand-coded binary features to detect if an object is hyp
 \State $\gamma' \gets \text{new\_grounding}(\boldsymbol{\lambda},\boldsymbol{\gamma}^*,\Upsilon)$
 \State $M.\Gamma \gets M.\Gamma + \gamma'$
 \State $M.F \gets M.F + f_{\text{word}}(\boldsymbol{\lambda}[\text{noun}])$
+\State $M.F \gets M.F + f_{\text{color}}(\boldsymbol{\gamma}^*[\text{color}])$
 \State $M.F \gets M.F + f_{\text{obj}}(\boldsymbol{\gamma}^*[\text{obj}])$
 \State $T_u \gets \text{replace\_unknown}(T_u,\gamma')$
 \EndIf
@@ -146,32 +178,6 @@ and $F_H$ is the set of hand-coded binary features to detect if an object is hyp
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
-
-\textcolor{blue}{- final summary to compare dcg, dcg-upup, dcg-upup-away as illustrated in fig 4}
-
-\subsection{Adjective-Attribute Heuristics}
-\textcolor{blue}{some intro for color heuristics} 
-
-Note that the factored objective function in this case has exactly the same form as in \eqref{eq:dcg_upup_away_llm1} where each feature function $\Psi(.)$ is defined as follows:
-\begin{equation}
-\Psi(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) = \frac{A_{UHC}}{B_{UHC}}
-\label{eq:color_llm2}
-\end{equation}
-where
-\begin{equation}
-A_{UHC}=\exp \Big( \sum_{f \in F_{\text{DCG}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
-\quad \quad \quad \quad \quad \quad + \sum_{f' \in F_{U}} \mu_{f'} f'(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
-\quad \quad \quad \quad \quad \quad + \sum_{f^{\prime\prime} \in F_{H}} \mu_{f^{\prime\prime}} f^{\prime\prime}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
-\quad \quad \quad \quad \quad \quad + \sum_{f^{\prime\prime\prime} \in F_{C}} \mu_{f^{\prime\prime\prime}} f^{\prime\prime\prime}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \Big), \nonumber
-\end{equation}
-
-\begin{equation}
-B_{UHC}=\sum_{\phi_{ij} \in \{0,1\}}\exp \Big( \sum_{f \in F_{\text{DCG}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
-\quad \quad \quad \quad \quad \quad \quad \quad + \sum_{f' \in F_{U}} \mu_{f'} f'(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \nonumber \\
-\quad \quad \quad \quad \quad \quad \quad \quad + \sum_{f^{\prime\prime} \in F_{H}} \mu_{f^{\prime\prime}} f^{\prime\prime}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH})\nonumber \\
-\; \quad \quad \quad \quad \quad \quad \quad \quad + \sum_{f^{\prime\prime\prime} \in F_{C}} \mu_{f^{\prime\prime\prime}} f^{\prime\prime\prime}(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) \Big), \nonumber
-\end{equation}
-and $F_C$ is the set of hand-coded binary features for detecting color phrases or properties.
 
 %\begin{equation}
 %\Psi() = \exp \Big( \sum_{f \epsilon F_{\text{DCG}}} \mu_f f(\phi_{ij},\gamma_{ij},\lambda_i,\Gamma_{c_{ij}},\Upsilon_{KP} \cup \Upsilon_{UP} \cup \Upsilon_{KH} \cup \Upsilon_{UH}) +...\\
