@@ -8,49 +8,108 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref.bib
+You're missing a field name---line 244 of file ref.bib
+ :  
+ :  %DOI       = {10.1348/026151005X55370}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 289 of file ref.bib
+ :  
+ :  %url = {https://www.aaai.org/ocs/index.php/AAAI/AAAI13/paper/view/6176}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 303 of file ref.bib
+ : 
+ : %url="http://dx.doi.org/10.1007/BF01589116"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 349 of file ref.bib
+ : 
+ : %doi="10.1007/978-3-319-00065-7_33",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 456 of file ref.bib
+ :  
+ :  number = "1",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 574 of file ref.bib
+ :   
+ :   %url       = {http://www.aaai.org/Library/AAAI/1994/aaai94-116.php},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 597 of file ref.bib
+ :  
+ :  %url = {http://doi.acm.org/10.1145/1008722.1008727},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 611 of file ref.bib
+ : 
+ : %url = {http://dx.doi.org/10.1207/s15516709cog2601_4},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 796 of file ref.bib
+ : 
+ : %url="http://www.cs.utexas.edu/users/ai-lab/?zelle:aaai96",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 808 of file ref.bib
+ :  
+ :  %url = {http://dl.acm.org/citation.cfm?id=1706543.1706546},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 824 of file ref.bib
+ :  
+ :  %url = {http://dl.acm.org/citation.cfm?id=1620270.1620341},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "langlearn2"
+refers to entry "DBLP:conf/aaai/1994-1", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/aaai/1994-1"
 -- IEEEtran.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 3 entries,
+You've used 24 entries,
             3975 wiz_defined-function locations,
-            812 strings with 7638 characters,
-and the built_in function-call counts, 2061 in all, are:
-= -- 135
-> -- 55
-< -- 10
-+ -- 30
-- -- 11
-* -- 103
-:= -- 306
-add.period$ -- 7
-call.type$ -- 3
-change.case$ -- 3
-chr.to.int$ -- 27
-cite$ -- 3
-duplicate$ -- 153
-empty$ -- 195
-format.name$ -- 13
-if$ -- 463
+            944 strings with 12111 characters,
+and the built_in function-call counts, 17534 in all, are:
+= -- 1273
+> -- 498
+< -- 118
++ -- 267
+- -- 95
+* -- 830
+:= -- 2506
+add.period$ -- 50
+call.type$ -- 24
+change.case$ -- 23
+chr.to.int$ -- 294
+cite$ -- 24
+duplicate$ -- 1296
+empty$ -- 1572
+format.name$ -- 115
+if$ -- 4074
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 32
-newline$ -- 29
-num.names$ -- 3
-pop$ -- 88
+int.to.str$ -- 24
+missing$ -- 259
+newline$ -- 92
+num.names$ -- 24
+pop$ -- 682
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 151
+skip$ -- 1339
 stack$ -- 0
-substring$ -- 66
-swap$ -- 109
-text.length$ -- 1
+substring$ -- 708
+swap$ -- 992
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 0
 warning$ -- 0
-while$ -- 6
-width$ -- 4
-write$ -- 44
+while$ -- 71
+width$ -- 26
+write$ -- 230
+(There were 12 error messages)
