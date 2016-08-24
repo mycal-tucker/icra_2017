@@ -29,4 +29,10 @@ T.~Howard, S.~Tellex, and N.~Roy, ``A natural language planner interface for
   mobile manipulators,'' In \textit{International Conference on Robotics and
   Automation}, June 2014.
 
+\bibitem{olson2011}
+E.~Olson, ``{AprilTag}: A robust and flexible visual fiducial system,'' in
+  \emph{Proceedings of the {IEEE} International Conference on Robotics and
+  Automation ({ICRA})}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, May 2011,
+  pp. 3400--3407.
+
 \end{thebibliography}

@@ -35,29 +35,30 @@ We further divide the grounding accuracy results to examine when phrases are gro
 %The primary metric used in evaluating the success of DCG-UPUP-Away is the grounding accuracy: how likely is the turtlebot to correctly execute the natural language command.
 As discussed previosuly, the turtlebot is retrained between iterations, thus the grounding accuracy may change as a function of iteration number. In fact, the mean grounding accuracy remains between $70\%$ and $90\%$ across all iterations, as shown in Figure~\ref{fig:g_acc}. Although the overall grounding accuracy remains relatively constant, the underlying behavior within the DCG-UPUP-Away model changes over the course of a trial. For example, Fig.~\ref{fig:g_acc_split} illustrates 3 curves showing what fraction of correctly grounded phrases refer to known objects, unknown objects, or learned objects as a function of iteration number. In the first iteration, nearly $70\%$ of correctly grounded commands refer to known objects, but by the 10$^\text{th}$ iteration that number has fallen to nearly $10\%$, replaced almost entirely by correctly grounding to learned objects.
 
-\begin{figure*}
-\begin{subfigure}[b]{0.3\textwidth}
+\begin{figure}[h!]
+\begin{subfigure}[b]{0.47\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{g_acc}
 \caption{Overall grounding accuracy.}
 \label{fig:g_acc}
 \end{subfigure}
 ~
-\begin{subfigure}[b]{0.31\textwidth}
+\begin{subfigure}[b]{0.50\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{symbols_corr}
 \caption{Number of learned symbols.}
 \label{fig:symbols}
 \end{subfigure}
-~
-\begin{subfigure}[b]{0.33\textwidth}
-\centering
-\includegraphics[width=\textwidth]{learning}
-\caption{The percentage of symbols.}
-\label{fig:g_acc_split}
-\end{subfigure}
 \caption{The performance results of the simulation study.}
-\end{figure*}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\columnwidth]{learning}
+\caption{The percentage of symbols during the simulations.}
+\label{fig:g_acc_split}
+\end{figure}
+
 
 %\begin{figure}[h]
 %\centering
@@ -86,34 +87,133 @@ In $10\%$ of trials, all $8$ symbols were correctly learned. In other trials the
 Furthermore, learning symbols correctly improves the grounding accuracy: for each additional correctly learned symbol, the turtlebot is over $4\%$ more likely to correctly ground a command. %(TODO generate p values via ANOVA.)
 
 \subsection{Hardware Demonstration}
-Outside the simulation environment, DCG-UPUP-Away was tested on a physical turtlebot in a laboratory setting.
-The turtlebot was placed facing a cylinder (known) and a cone (unknown).
+In addition to the simulation studies, the DCG-UPUP-Away model was tested on an actual turtlebot in a laboratory setting.
+The turtlebot was placed facing %a cylinder (known) and 
+a cone (unknown).
 In addition, a cube (known) and a crate (unknown) were located behind the turtlebot.
-All objects were labeled with AR-track tags, which, in conjunction with (cite AR track package) was used in order to generate the world model $\Upsilon$ from a kinect mounted on the turtlebot.\\
-%I'd like to add a footnote saying that I have videos of these demos
-\indent Four natural language commands were used to demonstrate the full range of abilities of DCG-UPUP-Away.
-First, the turtlebot was given the command ``move towards the cube.''
-The turtlebot successfully drove to the cube, demonstrating a correct grounding to a known, perceived object.\\
-\indent Second, the turtlebot was given the command ``move towards the cone.''
-The turtlebot drove to the cone, demonstrating that it perceived the cone as unknown, recognized the phrase ``cone'' as unknown, and grounded the unknown phrase to the unknown object.
-Thus, a command was correctly grounded to an unknown, perceived object.\\
-\indent Third, the turtlebot was given the command ``move towards the cube.''
-The turtlebot rotated in place until the cube came in view, and then approached the cube.
-In other words, the command was first grounded to a known, hypothesized object and then, once then cube was perceived, to a known, perceived object.\\
-\indent Fourth, the turtlebot was given the command ``move towards the crate.''
-Once again, the turtlebot rotated in place, this time until it saw the crate, whereupon it drove to the crate.
-This demonstrates two important behaviors: 1) the turtlebot must have learned what a cone was, otherwise the unknown phrase (``crate'') would have been grounded to the cone and 2) the turtlebot grounded the command to an unknown, hypothesized object until the crate was perceived.
-The execution of this last command, including images of the physical behavior of the turtlebot as well as the model used for grounding, is shown in Figure~\ref{fig:hardware_demo}.
+All objects were labeled with the AR-track tags \cite{olson2011}, which were used to generate the world model $\Upsilon$ from a kinect camera mounted on the turtlebot.
 
-\begin{figure}[ht]
+%I'd like to add a footnote saying that I have videos of these demos
+Three natural language commands were used to demonstrate all capabilities of the DCG-UPUP-Away model.
+%First, the turtlebot was given the command ``move towards the cube.''
+%The turtlebot successfully drove to the cube, demonstrating a correct grounding to a known, perceived object.\\
+First, the turtlebot was given the command ``move towards the cone.''
+The turtlebot drove to the cone, demonstrating that it perceived the cone as unknown, recognized the phrase ``cone'' as unknown, and grounded the unknown phrase to the unknown object.
+Thus, a command was correctly grounded to an unknown perceived object as illustrated in Fig.~\ref{fig:cone}.
+Second, the turtlebot was given the command ``move towards the cube.''
+The turtlebot rotated in place until the cube came in perception, and then approached the cube.
+In other words, the command was first grounded to a known hypothesized object, and then it was grounded to a known perceived object once the cube was seen. 
+Finally, the turtlebot was given the command ``move towards the crate.''
+Once again, the turtlebot explored its surrounding by rotating at its current location and drove to the crate once it perceived it (as illustrated in Fig.~\ref{fig:crate}). %rotated in place, this time until it saw the crate, whereupon it drove to the crate.
+The experimental results demonstrate two important behaviors: 1) the turtlebot must have learned what a cone was, otherwise the unknown phrase (``crate'') would have been grounded to the cone, and 2) the turtlebot grounded the command to an unknown hypothesized object until the crate was perceived. The interested reader is referred to the following link \footnote{https://www.youtube.com/playlist?list=PL8sYMUToK9s6dAu3qMHHOef8FyhOnDK4E} for the videos corresponding to these experiments.
+%The execution of this last command, including images of the physical behavior of the turtlebot as well as the model used for grounding, is shown in Figure~\ref{fig:hardware_demo}.
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=8.5cm]{hardware_sketch}
+%\caption{this is a sketch of the 6 subfigures that demonstrate hypothesized groundings on hardware and in the model, and shows how it learns. I'd like this to go across the top of the page.}
+%\label{fig:hardware_demo}
+%\end{figure}
+%\begin{figure*}
+%\begin{subfigure}[b]{0.31\textwidth}
+%\centering
+%\includegraphics[width=\textwidth]{hardware1.png}
+%\caption{The command ``move towards the box" is given, and the turtlebot approaches the box by grounding a known phrase to a known object.}
+%\label{fig:g_acc}
+%\end{subfigure}
+%~
+%\begin{subfigure}[b]{0.295\textwidth}
+%\centering
+%\includegraphics[width=\textwidth]{hardware2.png}
+%\caption{The command ``move towards the cone" is given, and the turtlebot drives to the cone because unknown phrase ``cone" is grounded to the unknown object cone.}
+%\label{fig:symbols}
+%\end{subfigure}
+%~
+%\begin{subfigure}[b]{0.355\textwidth}
+%\centering
+%\includegraphics[width=\textwidth]{hardware3.png}
+%\caption{The command ``move towards the cone" is given and the turtlebot follows path 1. The command ``move towards the ball" is given, and the turtlebot follows path 2.}
+%\label{fig:g_acc_split}
+%\end{subfigure}
+%\caption{Some illustrations of iterative learning via the proposed model. (a) The turtlebot initially knows a box, a helmet, and a soap box, then (b) it learns what a cone is, and then (c) it learns what a ball is.}
+%\end{figure*}
+
+
+\begin{figure}
+\begin{subfigure}[b]{0.305\columnwidth}
 \centering
-\includegraphics[width=8.5cm]{hardware_sketch}
-\caption{this is a sketch of the 6 subfigures that demonstrate hypothesized groundings on hardware and in the model, and shows how it learns. I'd like this to go across the top of the page.}
-\label{fig:hardware_demo}
+\includegraphics[width=\textwidth]{c1.png}
+\caption{t= 0 sec.}
+\label{fig:g_acc}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.31\columnwidth}
+\centering
+\includegraphics[width=\textwidth]{c2.png}
+\caption{t= 45 sec.}
+\label{fig:symbols}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.315\columnwidth}
+\centering
+\includegraphics[width=\textwidth]{c3.png}
+\caption{t= 50 sec.}
+\label{fig:g_acc_split}
+\end{subfigure}
+\caption{An illustration of learning new symbol. The turtlebot initially does not know what a cone is, a command is given as ``move towards the cone". (a) Since there is an unknown object in its perceived world, it grounds the unknown phrase ``cone" to the unknown object, (b,c) it drives to the cone.}
+\label{fig:cone}
 \end{figure}
 
+\begin{figure*}
+\begin{subfigure}[b]{0.15\textwidth}
+\centering
+\includegraphics[width=\textwidth]{1.png}
+\caption{t=0 sec.}
+\label{fig:g_acc}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.15\textwidth}
+\centering
+\includegraphics[width=\textwidth]{2.png}
+\caption{t=25 sec.}
+\label{fig:symbols}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.15\textwidth}
+\centering
+\includegraphics[width=\textwidth]{3.png}
+\caption{t=50 sec.}
+\label{fig:g_acc_split}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.15\textwidth}
+\centering
+\includegraphics[width=\textwidth]{4.png}
+\caption{t=70 sec.}
+\label{fig:g_acc}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.15\textwidth}
+\centering
+\includegraphics[width=\textwidth]{5.png}
+\caption{t=95 sec.}
+\label{fig:symbols}
+\end{subfigure}
+~
+\begin{subfigure}[b]{0.15\textwidth}
+\centering
+\includegraphics[width=\textwidth]{6.png}
+\caption{t=120 sec. }
+\label{fig:g_acc_split}
+\end{subfigure}
+\caption{An illustration of grounding to a hypothetical object. The robot initially knows all objects in the world other than a crate. The turtlebot is given a command as ``move towards the crate". (a) First, it does not see an unknown object in its perceived world so it creates a hypothetical unknown object, (b,c,d) it explores the world by rotating at its current location until it perceives an unknown object, (e) It perceives an unknown object and grounds to it, (f) it drives to the crate.}
+\label{fig:crate}
+\end{figure*}
+
+
 \subsection{Limitations}
-Although the successful execution of natural language commands has been discussed in great depth, the failures of DCG-UPUP-Away are equally important in characterizing the limits of its performance.\\
-\indent Specifically, the most obvious limitation is that DCG-UPUP-Away assumes that, in the absence of additional information, unknown phrases refer to the first perceived unknown object.
-Strategies to relax this assumption by associating language adjectives with object properties have been explored in Section (TODO color section), but so far only a relatively simple method has been used.\\
-\indent In addition, DCG-UPUP-Away assumes a one-to-one correspondence between unknown phrases and unknown objects; it cannot, for example, learn synonyms by grounding unknown phrases to known types.
+The previous sections demonstrated that the proposed model DCG-UPUP-Away results in the successful execution of various natural language commands. This section discusses the main limitations of the model.
+%of the DCG-UPUP-Away model encountrduring  are equally important in characterizing the limits of its performance.\\
+In particular, the most obvious limitation of the DCG-UPUP-Away model is the assumption of referring an unknown phrase to the first perceived unknown object. %that, in the absence of additional information, unknown phrases refer to the first perceived unknown object.
+One strategy to relax this assumption has been explored in Section~\ref{sec:color} by associating language adjectives with object properties. However, a more sophisticated strategy is required for generalizable solutions.  %have been explored in Section (TODO color section), but so far only a relatively simple method has been used.\\
+Moreover, the DCG-UPUP-Away model assumes a one-to-one correspondence between unknown phrases and unknown objects; thus it cannot, for example, learn synonyms by grounding unknown phrases to the known object types.
