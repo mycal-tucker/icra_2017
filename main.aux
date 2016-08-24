@@ -51,13 +51,13 @@
 \newlabel{sec:technical}{{III}{3}{Technical Approach}{section.3}{}}
 \newlabel{sec:technical@cref}{{[section][3][]III}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {III-A}Grounding Unknown Phrases or Objects}{3}{subsection.3.1}}
-\newlabel{fig:wo_unknown}{{3a}{3}{Without explicit unknown symbols\relax }{figure.caption.3}{}}
+\newlabel{fig:wo_unknown}{{3a}{3}{Without explicit unknown grounding variables.\relax }{figure.caption.3}{}}
 \newlabel{fig:wo_unknown@cref}{{[subfigure][1][3]3a}{3}}
-\newlabel{sub@fig:wo_unknown}{{a}{3}{Without explicit unknown symbols\relax }{figure.caption.3}{}}
+\newlabel{sub@fig:wo_unknown}{{a}{3}{Without explicit unknown grounding variables.\relax }{figure.caption.3}{}}
 \newlabel{sub@fig:wo_unknown@cref}{{[subfigure][1][3]3a}{3}}
-\newlabel{fig:w_unknown}{{3b}{3}{With explicit unknown symbols\relax }{figure.caption.3}{}}
+\newlabel{fig:w_unknown}{{3b}{3}{With explicit unknown grounding variables.\relax }{figure.caption.3}{}}
 \newlabel{fig:w_unknown@cref}{{[subfigure][2][3]3b}{3}}
-\newlabel{sub@fig:w_unknown}{{b}{3}{With explicit unknown symbols\relax }{figure.caption.3}{}}
+\newlabel{sub@fig:w_unknown}{{b}{3}{With explicit unknown grounding variables.\relax }{figure.caption.3}{}}
 \newlabel{sub@fig:w_unknown@cref}{{[subfigure][2][3]3b}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Factor graph representations. Input instruction is parsed into $N$ phrases where $\lambda _l$ represents a child phrase of parent phrase $\lambda _i$. Superscripts $K$ and $U$ denote known and unknown variables, respectively.\relax }}{3}{figure.caption.3}}
 \newlabel{eq:dcg_upup_llm1}{{5}{3}{Grounding Unknown Phrases or Objects}{equation.3.5}{}}
@@ -69,6 +69,8 @@
 \newlabel{eq:dcg_upup_away_llm1}{{7}{4}{Hypothesized Groundings out of Perception}{equation.3.7}{}}
 \newlabel{eq:dcg_upup_away_llm1@cref}{{[equation][7][]7}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {III-D}Adjective-Attribute Heuristics}{4}{subsection.3.4}}
+\newlabel{sec:color}{{III-D}{4}{Adjective-Attribute Heuristics}{subsection.3.4}{}}
+\newlabel{sec:color@cref}{{[subsection][4][3]III-D}{4}}
 \newlabel{eq:color_llm2}{{9}{4}{Adjective-Attribute Heuristics}{equation.3.9}{}}
 \newlabel{eq:color_llm2@cref}{{[equation][9][]9}{4}}
 \newlabel{fig:dcg}{{4a}{5}{The DCG model\relax }{figure.caption.4}{}}
@@ -91,31 +93,44 @@
 \newlabel{sec:evaluation}{{IV}{5}{Evaluation}{section.4}{}}
 \newlabel{sec:evaluation@cref}{{[section][4][]IV}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {IV-A}Experimental Setup}{5}{subsection.4.1}}
+\citation{olson2011}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A simulated world with a highlighted object presented on Amazon Mechanical Turk, labeled by a user as ``Move to the red fire hydrant.''\relax }}{6}{figure.caption.5}}
 \newlabel{fig:amt}{{5}{6}{A simulated world with a highlighted object presented on Amazon Mechanical Turk, labeled by a user as ``Move to the red fire hydrant.''\relax }{figure.caption.5}{}}
 \newlabel{fig:amt@cref}{{[figure][5][]5}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {IV-B}Grounding Accuracy}{6}{subsection.4.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {IV-C}Learned Symbols}{6}{subsection.4.3}}
+\newlabel{fig:g_acc}{{6a}{6}{Overall grounding accuracy.\relax }{figure.caption.6}{}}
+\newlabel{fig:g_acc@cref}{{[subfigure][1][6]6a}{6}}
+\newlabel{sub@fig:g_acc}{{a}{6}{Overall grounding accuracy.\relax }{figure.caption.6}{}}
+\newlabel{sub@fig:g_acc@cref}{{[subfigure][1][6]6a}{6}}
+\newlabel{fig:symbols}{{6b}{6}{Number of learned symbols.\relax }{figure.caption.6}{}}
+\newlabel{fig:symbols@cref}{{[subfigure][2][6]6b}{6}}
+\newlabel{sub@fig:symbols}{{b}{6}{Number of learned symbols.\relax }{figure.caption.6}{}}
+\newlabel{sub@fig:symbols@cref}{{[subfigure][2][6]6b}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The performance results of the simulation study.\relax }}{6}{figure.caption.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The percentage of symbols during the simulations.\relax }}{6}{figure.caption.7}}
+\newlabel{fig:g_acc_split}{{7}{6}{The percentage of symbols during the simulations.\relax }{figure.caption.7}{}}
+\newlabel{fig:g_acc_split@cref}{{[figure][7][]7}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {IV-D}Hardware Demonstration}{6}{subsection.4.4}}
 \bibdata{ref}
 \bibcite{g3}{1}
 \bibcite{dcg}{2}
-\newlabel{fig:g_acc}{{6a}{7}{Overall grounding accuracy.\relax }{figure.caption.6}{}}
-\newlabel{fig:g_acc@cref}{{[subfigure][1][6]6a}{7}}
-\newlabel{sub@fig:g_acc}{{a}{7}{Overall grounding accuracy.\relax }{figure.caption.6}{}}
-\newlabel{sub@fig:g_acc@cref}{{[subfigure][1][6]6a}{7}}
-\newlabel{fig:symbols}{{6b}{7}{Number of learned symbols.\relax }{figure.caption.6}{}}
-\newlabel{fig:symbols@cref}{{[subfigure][2][6]6b}{7}}
-\newlabel{sub@fig:symbols}{{b}{7}{Number of learned symbols.\relax }{figure.caption.6}{}}
-\newlabel{sub@fig:symbols@cref}{{[subfigure][2][6]6b}{7}}
-\newlabel{fig:g_acc_split}{{6c}{7}{The percentage of symbols.\relax }{figure.caption.6}{}}
-\newlabel{fig:g_acc_split@cref}{{[subfigure][3][6]6c}{7}}
-\newlabel{sub@fig:g_acc_split}{{c}{7}{The percentage of symbols.\relax }{figure.caption.6}{}}
-\newlabel{sub@fig:g_acc_split@cref}{{[subfigure][3][6]6c}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The performance results of the simulation study.\relax }}{7}{figure.caption.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces this is a sketch of the 6 subfigures that demonstrate hypothesized groundings on hardware and in the model, and shows how it learns. I'd like this to go across the top of the page.\relax }}{7}{figure.caption.7}}
-\newlabel{fig:hardware_demo}{{7}{7}{this is a sketch of the 6 subfigures that demonstrate hypothesized groundings on hardware and in the model, and shows how it learns. I'd like this to go across the top of the page.\relax }{figure.caption.7}{}}
-\newlabel{fig:hardware_demo@cref}{{[figure][7][]7}{7}}
+\bibcite{olson2011}{3}
+\newlabel{fig:g_acc}{{8a}{7}{t= 0 sec.\relax }{figure.caption.8}{}}
+\newlabel{fig:g_acc@cref}{{[subfigure][1][8]8a}{7}}
+\newlabel{sub@fig:g_acc}{{a}{7}{t= 0 sec.\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:g_acc@cref}{{[subfigure][1][8]8a}{7}}
+\newlabel{fig:symbols}{{8b}{7}{t= 45 sec.\relax }{figure.caption.8}{}}
+\newlabel{fig:symbols@cref}{{[subfigure][2][8]8b}{7}}
+\newlabel{sub@fig:symbols}{{b}{7}{t= 45 sec.\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:symbols@cref}{{[subfigure][2][8]8b}{7}}
+\newlabel{fig:g_acc_split}{{8c}{7}{t= 50 sec.\relax }{figure.caption.8}{}}
+\newlabel{fig:g_acc_split@cref}{{[subfigure][3][8]8c}{7}}
+\newlabel{sub@fig:g_acc_split}{{c}{7}{t= 50 sec.\relax }{figure.caption.8}{}}
+\newlabel{sub@fig:g_acc_split@cref}{{[subfigure][3][8]8c}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces An illustration of learning new symbol. The turtlebot initially does not know what a cone is, a command is given as ``move towards the cone". (a) Since there is an unknown object in its perceived world, it grounds the unknown phrase ``cone" to the unknown object, (b,c) it drives to the cone.\relax }}{7}{figure.caption.8}}
+\newlabel{fig:cone}{{8}{7}{An illustration of learning new symbol. The turtlebot initially does not know what a cone is, a command is given as ``move towards the cone". (a) Since there is an unknown object in its perceived world, it grounds the unknown phrase ``cone" to the unknown object, (b,c) it drives to the cone.\relax }{figure.caption.8}{}}
+\newlabel{fig:cone@cref}{{[figure][8][]8}{7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {IV-E}Limitations}{7}{subsection.4.5}}
 \@writefile{toc}{\contentsline {section}{\numberline {V}Related Works}{7}{section.5}}
 \newlabel{sec:related}{{V}{7}{Related Works}{section.5}{}}
@@ -123,4 +138,31 @@
 \@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{7}{section.6}}
 \newlabel{sec:conclusion}{{VI}{7}{Conclusion}{section.6}{}}
 \newlabel{sec:conclusion@cref}{{[section][6][]VI}{7}}
-\@writefile{toc}{\contentsline {section}{References}{7}{section*.8}}
+\@writefile{toc}{\contentsline {section}{References}{7}{section*.10}}
+\newlabel{fig:g_acc}{{9a}{8}{t=0 sec.\relax }{figure.caption.9}{}}
+\newlabel{fig:g_acc@cref}{{[subfigure][1][9]9a}{8}}
+\newlabel{sub@fig:g_acc}{{a}{8}{t=0 sec.\relax }{figure.caption.9}{}}
+\newlabel{sub@fig:g_acc@cref}{{[subfigure][1][9]9a}{8}}
+\newlabel{fig:symbols}{{9b}{8}{t=25 sec.\relax }{figure.caption.9}{}}
+\newlabel{fig:symbols@cref}{{[subfigure][2][9]9b}{8}}
+\newlabel{sub@fig:symbols}{{b}{8}{t=25 sec.\relax }{figure.caption.9}{}}
+\newlabel{sub@fig:symbols@cref}{{[subfigure][2][9]9b}{8}}
+\newlabel{fig:g_acc_split}{{9c}{8}{t=50 sec.\relax }{figure.caption.9}{}}
+\newlabel{fig:g_acc_split@cref}{{[subfigure][3][9]9c}{8}}
+\newlabel{sub@fig:g_acc_split}{{c}{8}{t=50 sec.\relax }{figure.caption.9}{}}
+\newlabel{sub@fig:g_acc_split@cref}{{[subfigure][3][9]9c}{8}}
+\newlabel{fig:g_acc}{{9d}{8}{t=70 sec.\relax }{figure.caption.9}{}}
+\newlabel{fig:g_acc@cref}{{[subfigure][4][9]9d}{8}}
+\newlabel{sub@fig:g_acc}{{d}{8}{t=70 sec.\relax }{figure.caption.9}{}}
+\newlabel{sub@fig:g_acc@cref}{{[subfigure][4][9]9d}{8}}
+\newlabel{fig:symbols}{{9e}{8}{t=95 sec.\relax }{figure.caption.9}{}}
+\newlabel{fig:symbols@cref}{{[subfigure][5][9]9e}{8}}
+\newlabel{sub@fig:symbols}{{e}{8}{t=95 sec.\relax }{figure.caption.9}{}}
+\newlabel{sub@fig:symbols@cref}{{[subfigure][5][9]9e}{8}}
+\newlabel{fig:g_acc_split}{{9f}{8}{t=120 sec. \relax }{figure.caption.9}{}}
+\newlabel{fig:g_acc_split@cref}{{[subfigure][6][9]9f}{8}}
+\newlabel{sub@fig:g_acc_split}{{f}{8}{t=120 sec. \relax }{figure.caption.9}{}}
+\newlabel{sub@fig:g_acc_split@cref}{{[subfigure][6][9]9f}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces An illustration of grounding to a hypothetical object. The robot initially knows all objects in the world other than a crate. The turtlebot is given a command as ``move towards the crate". (a) First, it does not see an unknown object in its perceived world so it creates a hypothetical unknown object, (b,c,d) it explores the world by rotating at its current location until it perceives an unknown object, (e) It perceives an unknown object and grounds to it, (f) it drives to the crate.\relax }}{8}{figure.caption.9}}
+\newlabel{fig:crate}{{9}{8}{An illustration of grounding to a hypothetical object. The robot initially knows all objects in the world other than a crate. The turtlebot is given a command as ``move towards the crate". (a) First, it does not see an unknown object in its perceived world so it creates a hypothetical unknown object, (b,c,d) it explores the world by rotating at its current location until it perceives an unknown object, (e) It perceives an unknown object and grounds to it, (f) it drives to the crate.\relax }{figure.caption.9}{}}
+\newlabel{fig:crate@cref}{{[figure][9][]9}{8}}

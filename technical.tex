@@ -43,14 +43,14 @@ $F_{DCG}$ and $F_{U}$ are the sets of hand-coded binary features used in the DCG
 \begin{subfigure}[t]{0.45\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{case1.pdf}
-\caption{Without explicit unknown symbols}
+\caption{Without explicit unknown grounding variables.}
 \label{fig:wo_unknown}
 \end{subfigure}
 ~
 \begin{subfigure}[t]{0.51\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{case2.pdf}
-\caption{With explicit unknown symbols}
+\caption{With explicit unknown grounding variables.}
 \label{fig:w_unknown}
 \end{subfigure}
 
@@ -119,6 +119,7 @@ and $F_H$ is the set of hand-coded binary features to detect if an object is hyp
 \end{figure*}
 
 \subsection{Adjective-Attribute Heuristics}
+\label{sec:color}
 One way to improve the grounding performance of the DCG-UPUP-Away model is to allow the association between the natural language adjectives and the object properties. For example, if there exist two cube type objects in the world, one way to distinguish them from each other is to consider their properties such as color or size. In this section, we present how to include color information into the solution of grounding problem over the DCG-UPUP-Away. To this end, two additional features are introduced: the feature $f_{word}$ detects whether the language command contains a color adjective, and the feature $f_{color}$ checks the color property of an object.     
 
 Note that the factored objective function in this case has exactly the same form as in \eqref{eq:dcg_upup_away_llm1} where each feature function $\Psi(.)$ is defined as follows:
