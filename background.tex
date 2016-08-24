@@ -1,8 +1,8 @@
 \section{Background}
 \label{sec:background}
-The work in this paper falls within the field of natural language grounding, which addresses the problem of correctly determining how phrases relate to the real world (e.g. the phrase ``go to the cube'' means approaching a physical cube).
+The work in this paper falls within the field of natural language grounding, which addresses the problem of correctly determining how phrases relate to the real world (e.g., the phrase ``go to the cube'' means approaching a physical cube).
 % Before proceeding further, one must define the domains over which the grounding problem may be solved.
-In the general formulation of the grounding problem, three sets must be considered: ${\Gamma = \{\text{symbolic actions and objects\}}}$ is the set of groundings, which represents what phrases may be grounded to; ${\Lambda = \{\text{English phrases}\}}$ is the set of phrases, which represents what phrases natural language sentences may be composed of; and ${\Upsilon = \Gamma^O \times \{\text{object attributes}\} }$ is the cartesian product of the set of objects (i.e. $\Gamma^O \subset \Gamma$) and the object attributes (e.g. color, location), which represents the world model in which the phrases may be grounded. 
+In the general formulation of the grounding problem, three sets must be considered: ${\Gamma = \{\text{symbolic actions and objects\}}}$ is the set of groundings, which represents what phrases may be grounded to; ${\Lambda = \{\text{English phrases}\}}$ is the set of phrases, which represents what phrases natural language sentences may be composed of; and ${\Upsilon = \Gamma^O \times \{\text{object attributes}\} }$ is the cartesian product of the set of objects (i.e., $\Gamma^O \subset \Gamma$) and the object attributes (e.g., color, location), which represents the world model in which the phrases may be grounded. 
 
 Given a natural language command $\boldsymbol{\lambda}$, which is a vector of phrases from the set $\Lambda$ and has a length of $|\boldsymbol{\lambda}|$, 
 %\indent Using these domains, it is possible to formulate 
@@ -20,10 +20,10 @@ For example, rather than allowing the set of phrases $\Lambda$ to include all wo
 % even though limited sets ($\Gamma$, $\Lambda$, and $\Upsilon$) are considered. 
 One way to tackle this issue is to construct probabilistic graphical models based on the linguistic structure of the commands. For example, the Generalized Grounding Graph (G3) model \cite{g3} is a factor graph that is trained from a corpus of labeled examples to ground language commands with objects, locations, and paths.  
 
-An alternative model is the Distributed Correspondence Graph (DCG) \cite{dcg}, which infers the most likely set of planning constraints from language commands (rather than grounding phrases to particular actions, objects, or paths as in G3 model). In particular, DCG has the following properties:  
-First, DCG decouples motion planning from the grounding problem. To this end, it discards the notion of grounding to specific actions or objects by instead only grounding to constraints relative to known objects (e.g. the area near a cube). Then, it passes the constraints to a motion planner.
-Second, DCG allows only the phrases composed entirely of the words that have already been encountered in training.
-Third, DCG only considers the perceived objects rather than a full model of the world including the unobserved objects.
+An alternative model is the Distributed Correspondence Graph (DCG) \cite{dcg}, which infers the most likely set of planning constraints from language commands (rather than grounding phrases to particular actions, objects, or paths as in G3 model). In particular, the DCG model has the following properties:  
+First, the DCG decouples motion planning from the grounding problem. To this end, it discards the notion of grounding to specific actions or objects by instead only grounding to constraints relative to known objects (e.g. the area near a cube). Then, it passes the constraints to a motion planner.
+Second, the DCG allows only the phrases composed entirely of the words that have already been encountered in training.
+Third, the DCG only considers the perceived objects rather than a full model of the world including the unobserved objects.
 Fourth, ternary correspondence variables $\phi_{ij}$ are introduced to represent whether the $i^\text{th}$ phrase $\lambda_i$ from the overall command $\boldsymbol{\lambda}$ corresponds to a grounding $\gamma_{ij}$.
 For a given phrase $\lambda_i$, $\phi_{ij}$ is set to \emph{Active} if $\lambda_i$ refers to constraint $\gamma_{ij}$ (e.g., the area near the cube), \emph{Inverted} if $\lambda_i$ refers to the opposite of $\gamma_{ij}$ (e.g. the area far from the cube), or \emph{Inactive} if $\lambda_i$ has no bearing on $\gamma_{ij}$ (e.g. the area near a sphere).
 Fifth, for the sake of computational efficiency, the overall inference is factored using conditional independence according to the structure of the parse tree of $\boldsymbol{\lambda}$.

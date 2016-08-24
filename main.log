@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 AUG 2016 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 AUG 2016 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,8 +1350,8 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
 
-Underfull \hbox (badness 2376) in paragraph at lines 3--6
-\OT1/ptm/m/n/10 world (e.g. the phrase ``go to the cube'' means ap-
+Underfull \hbox (badness 1946) in paragraph at lines 3--6
+\OT1/ptm/m/n/10 world (e.g., the phrase ``go to the cube'' means ap-
  []
 
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -1682,7 +1682,7 @@ xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist
 e1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on main.pdf (8 pages, 4234713 bytes).
+Output written on main.pdf (8 pages, 4235450 bytes).
 PDF statistics:
  476 PDF objects out of 1000 (max. 8388607)
  390 compressed objects within 4 object streams
