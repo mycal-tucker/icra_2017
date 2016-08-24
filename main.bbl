@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{#1}
 \csname url@rmstyle\endcsname
 \providecommand{\newblock}{\relax}
@@ -34,5 +34,115 @@ E.~Olson, ``{AprilTag}: A robust and flexible visual fiducial system,'' in
   \emph{Proceedings of the {IEEE} International Conference on Robotics and
   Automation ({ICRA})}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, May 2011,
   pp. 3400--3407.
+
+\bibitem{citeLangNoisySensor}
+F.~Duvallet, M.~Walter, T.~Howard, S.~Hemachandra, J.~H. {Oh }, S.~Teller,
+  N.~Roy, and A.~T. {Stentz }, ``Inferring maps and behaviors from natural
+  language instructions,'' in \emph{International Symposium on Experimental
+  Robotics}, June 2014.
+
+\bibitem{outside1}
+T.~Williams, R.~Cantrell, G.~Briggs, P.~Schermerhorn, and M.~Scheutz,
+  ``Grounding natural language references to unvisited and hypothetical
+  locations,'' 2013.
+
+\bibitem{rewardFunction}
+J.~MacGlashan, M.~Babes-Vroman, M.~desJardins, M.~Littman, S.~Muresan,
+  S.~Squire, S.~Tellex, D.~Arumugam, and L.~Yang, ``Grounding english commands
+  to reward functions,'' in \emph{Proceedings of Robotics: Science and
+  Systems}, Rome, Italy, July 2015.
+
+\bibitem{pancakes}
+M.~Beetz, U.~Klank, I.~Kresse, A.~Maldonado, L.~Mosenlechner, D.~Pangercic,
+  T.~Ruhr, and M.~Tenorth, ``Robotic roommates making pancakes,'' in
+  \emph{Humanoid Robots (Humanoids), 2011 11th IEEE-RAS International
+  Conference on}, Oct 2011, pp. 529--536.
+
+\bibitem{recipes2}
+M.~Bollini, S.~Tellex, T.~Thompson, N.~Roy, and D.~Rus, \emph{Interpreting and
+  Executing Recipes with a Cooking Robot}.\hskip 1em plus 0.5em minus
+  0.4em\relax Heidelberg: Springer International Publishing, 2013, pp.
+  481--495.
+
+\bibitem{whichOne}
+R.~Ros, S.~Lemaignan, E.~A. Sisbot, R.~Alami, J.~Steinwender, K.~Hamann, and
+  F.~Warneken, ``Which one? grounding the referent based on efficient
+  human-robot interaction,'' in \emph{19th International Symposium in Robot and
+  Human Interactive Communication}, Sept 2010, pp. 570--575.
+
+\bibitem{kids1}
+H.~Moll and M.~Tomasello, ``Twelve- and 18-month-old infants follow gaze to
+  spaces behind barriers,'' In \textit{British Journal of Developmental
+  Psychology}, 2004.
+
+\bibitem{kids2}
+------, ``Level 1 perspective-taking at 24 months of age,'' In
+  \textit{Developmental Science}, 2006.
+
+\bibitem{perspective1}
+J.~G. Trafton, N.~L. Cassimatis, M.~D. Bugajska, D.~P. Brock, F.~E. Mintz, and
+  A.~C. Schultz, ``Enabling effective human-robot interaction using
+  perspective-taking in robots,'' \emph{IEEE Transactions on Systems, Man, and
+  Cybernetics}, vol.~35, pp. 460--470, 2005.
+
+\bibitem{perspective2}
+J.~G. Trafton, A.~C. Schultz, M.~Bugajska, and F.~Mintz, ``Perspective-taking
+  with robots: experiments and models,'' in \emph{ROMAN 2005. IEEE
+  International Workshop on Robot and Human Interactive Communication, 2005.},
+  Aug 2005, pp. 580--584.
+
+\bibitem{clarifyingCommands}
+R.~Deits, S.~Tellex, P.~Thaker, D.~Simeonov, T.~Kollar, and N.~Roy,
+  ``{Clarifying Commands with Information-Theoretic Human-Robot Dialog},''
+  \emph{{Journal of Human-Robot Interaction}}, vol.~2, no.~2, pp. 58--79, 2013.
+
+\bibitem{interaction1}
+T.~W. Fong, C.~Thorpe, and C.~Baur, ``Robot, asker of questions,''
+  \emph{Robotics and Autonomous Systems}, 2003.
+
+\bibitem{interaction2}
+N.~Roy, J.~Pineau, and S.~Thrun, ``Spoken dialogue management using
+  probabilistic reasoning,'' in \emph{Proceedings of the 38th Annual Meeting of
+  the Association for Computational Linguistics (ACL-2000)}, Hong Kong, 2000.
+
+\bibitem{langlearn1}
+A.~S. Clark, ``Unsupervised language acquisition: Theory and practice,'' 2001.
+
+\bibitem{langlearn2}
+J.~M. Siskind, ``Lexical acquisition in the presence of noise and homonymy,''
+  in \emph{Proceedings of the 12th National Conference on Artificial
+  Intelligence, Seattle, WA, USA, July 31 - August 4, 1994, Volume 1.}, 1994,
+  pp. 760--766.
+
+\bibitem{formal1}
+J.~M. Zelle and R.~J. Mooney, ``Learning to parse database queries using
+  inductive logic programming,'' in \emph{AAAI/IAAI}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Portland, OR: AAAI Press/MIT Press, August 1996, pp.
+  1050--1055.
+
+\bibitem{formal2}
+R.~Ge and R.~J. Mooney, ``A statistical semantic parser that integrates syntax
+  and semantics,'' in \emph{Proceedings of the Ninth Conference on
+  Computational Natural Language Learning}, ser. CONLL '05, 2005, pp. 9--16.
+
+\bibitem{mooneypivot}
+R.~J. Mooney, ``Learning to connect language and perception,'' in
+  \emph{Proceedings of the 23rd National Conference on Artificial Intelligence
+  - Volume 3}, ser. AAAI'08, 2008, pp. 1598--1601.
+
+\bibitem{langlearn3}
+C.~Yu and D.~H. Ballard, ``A multimodal learning interface for grounding spoken
+  language in sensory perceptions,'' \emph{ACM Trans. Appl. Percept.}, vol.~1,
+  no.~1, pp. 57--80, July 2004.
+
+\bibitem{langlearn4}
+D.~K. Roy and A.~P. Pentland, ``Learning words from sights and sounds: a
+  computational model,'' \emph{Cognitive Science}, vol.~26, no.~1, pp.
+  113--146, 2002.
+
+\bibitem{learningSemanticMaps}
+M.~R. Walter, S.~Hemachandra, B.~Homberg, S.~Tellex, and S.~Teller, ``Learning
+  semantic maps from natural language descriptions,'' in \emph{Proceedings of
+  Robotics: Science and Systems (RSS)}, Berlin, Germany, June 2013.
 
 \end{thebibliography}

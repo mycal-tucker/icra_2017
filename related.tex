@@ -1,3 +1,27 @@
 \section{Related Works}
 \label{sec:related}
-related work goes here
+This work is closely related to solving the grounding problem over probabilistic graphical models that contain three main variables: grounding variables, language command, and the world model.
+In the previous works, the domains of the grounding variables, the language command, and the world model have been restricted to the known phrases and the perecived groundings~\cite{g3,dcg}.
+Furthermore, although some works reason about unknown environments, many probabilistic grounding techniques assume fully observable worlds~\cite{citeLangNoisySensor,outside1}.
+
+%The idea of dividing natural language planning into a grounding phase followed by a planning phase has subsequently appeared in several other papers for robotic navigation or recipe-following~\cite{rewardFunction,pancakes,recipes2}.
+In this paper, we propose an unsupervised learning process to learn new symbols (i.e., new phrases or objects). An alternative way of grounding unknown or ambiguous symbols can be done via human-robot dialogue (e.g., \cite{whichOne}). For example, Ros et al. broadly approach resolving language ambiguity using two techniques. First, a robot attempts to model the human's perspective on the scene to determine which objects may be visible to the human.
+This technique relies on insights from child development studies that show how children employ such reasoning on their own and has been successfully used in other robotics literature~\cite{kids1,kids2,perspective1,perspective2}.
+%Importantly, this first strategy requires no additional dialog.
+The second strategy relies on the robot asking a human for more information.
+For example, the robot may ask for spatial relations or object features in distinguishing between objects.
+Choosing exactly which question to ask, of course, requires reasoning about what information best discriminates among potential groundings (e.g., \cite{clarifyingCommands}). %Alternatively, Deits et al. explore precisely that issue of how to choose which questions to ask in .
+For example, the entropy of the probability distribution over groundings is used to estimate the grounding uncertainty in \cite{clarifyingCommands}. Accordingly, higher entropy leads to more questions which improves the grounding accuracy rate.
+%As expected, asking questions leads to a greater grounding accuracy rate for all sorts of questions asked.
+Note that a critical issue in robotic question-asking is the proper balance between too many questions and not enough questions while simultaneously determining what sorts of question to ask~\cite{interaction1,interaction2}.
+
+One common approach for autonomous language learning provides a robot with semantic representations of the world that must be associated with language.
+Such associations may be formally expressed using predicate logic, but ultimately the problem of language acquisition is reframed as a mapping problem from words to pre-defined semantics (e.g., \cite{langlearn1,langlearn2,formal1,formal2}).
+Unfortunately, hand-labeled representations necessarily require intensive human involvement in generating training data~\cite{mooneypivot}.
+As a result, some studies consider the opposite approach and try to associate words directly to objects or actions without creating formal symbolic representations.
+For example, using online raw video data and sentences, a system is able to learn shape categories without being told ahead of time that four right angles define rectangular objects~\cite{langlearn3,langlearn4}.
+
+Finally, there exist some studies in the literature considering the idea of hypothesizing objects out of perception. For example, Duvallet et al. uses a framework to propose a latent map that is partially observed by the language command~\cite{citeLangNoisySensor}.
+Accordingly, in the example of a ball outside the door, the phrase ``pick up the ball outside the door'' generates a region of high probability near the door and low probability further away.
+Sampling from this distribution, as well as updating the distribution as more observations are made, yields a useful map to plan in.
+Similarly, some other works generate distributions over maps or exactly place objects in unknown environments if their locations are uniquely described~\cite{learningSemanticMaps,outside1}.
