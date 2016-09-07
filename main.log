@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 AUG 2016 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 SEP 2016 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1134,110 +1134,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip59
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (./main.aux
-
-LaTeX Warning: Label `fig:g_acc' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:symbols' multiply defined.
-
-
-LaTeX Warning: Label `fig:symbols@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:symbols' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:symbols@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc_split' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc_split@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:symbols' multiply defined.
-
-
-LaTeX Warning: Label `fig:symbols@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:symbols' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:symbols@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc_split' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc_split@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc_split' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc_split@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:symbols' multiply defined.
-
-
-LaTeX Warning: Label `fig:symbols@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:symbols' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:symbols@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc_split' multiply defined.
-
-
-LaTeX Warning: Label `fig:g_acc_split@cref' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc_split' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:g_acc_split@cref' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1335,288 +1232,281 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
  []
 
 (./abstract.tex) (./introduction.tex
-<images/intro_pic.png, id=71, 535.7616pt x 440.3652pt>
+<images/intro_pic.png, id=79, 535.7616pt x 440.3652pt>
 File: images/intro_pic.png Graphic file (type png)
 
 <use images/intro_pic.png>
 Package pdftex.def Info: images/intro_pic.png used on input line 13.
-(pdftex.def)             Requested size: 202.01474pt x 166.04366pt.
-) (./background.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 5.
+(pdftex.def)             Requested size: 170.71652pt x 140.3217pt.
+) (./background.tex [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updma
+p/pdftex.map}
+
+
+ <./images/intro_pic.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 10.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
 
-Underfull \hbox (badness 1946) in paragraph at lines 3--6
-\OT1/ptm/m/n/10 world (e.g., the phrase ``go to the cube'' means ap-
- []
-
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <./images/intro_pic.png>] <images/parse_tree.jpg, id=96, 498.36188pt x 298.615
-63pt>
+<images/parse_tree.jpg, id=107, 498.36188pt x 298.61563pt>
 File: images/parse_tree.jpg Graphic file (type jpg)
 
 <use images/parse_tree.jpg>
-Package pdftex.def Info: images/parse_tree.jpg used on input line 51.
-(pdftex.def)             Requested size: 95.82991pt x 57.41647pt.
+Package pdftex.def Info: images/parse_tree.jpg used on input line 68.
+(pdftex.def)             Requested size: 93.37407pt x 55.94928pt.
 
-<images/dcg_plates.jpg, id=97, 547.54562pt x 356.83313pt>
-File: images/dcg_plates.jpg Graphic file (type jpg)
+<images/dcg_plates_new.pdf, id=108, 317.15952pt x 173.56142pt>
+File: images/dcg_plates_new.pdf Graphic file (type pdf)
 
-<use images/dcg_plates.jpg>
-Package pdftex.def Info: images/dcg_plates.jpg used on input line 58.
-(pdftex.def)             Requested size: 135.1457pt x 88.07553pt.
- [2 <./images/parse_tree.jpg> <./images/dcg_plates.jpg>]
-
-Package resizegather Warning: Equation line 1 is too large by 90.20447pt
-(resizegather)                in environment `equation' on input line 76.
+<use images/dcg_plates_new.pdf>
+Package pdftex.def Info: images/dcg_plates_new.pdf used on input line 75.
+(pdftex.def)             Requested size: 142.51695pt x 77.99068pt.
 
 
-Overfull \hbox (90.20447pt too wide) in paragraph at lines 76--76
+Package resizegather Warning: Equation line 1 is too large by 95.44212pt
+(resizegather)                in environment `equation' on input line 93.
+
+
+Overfull \hbox (95.44212pt too wide) in paragraph at lines 93--93
 [] 
  []
 
-) (./technical.tex
+) (./technical.tex [2 <./images/parse_tree.jpg> <./images/dcg_plates_new.pdf>]
+Package resizegather Info: Equation line 1 is too large by 3.71875pt
+(resizegather)             in environment `equation' on input line 29.
 
-Package resizegather Warning: Equation line 1 is too large by 18.4158pt
+Overfull \hbox (3.71875pt too wide) in paragraph at lines 29--29
+[] 
+ []
+
+
+Package resizegather Warning: Equation line 1 is too large by 40.6131pt
 (resizegather)                in environment `equation' on input line 34.
 
 
-Overfull \hbox (18.4158pt too wide) in paragraph at lines 34--34
+Overfull \hbox (40.6131pt too wide) in paragraph at lines 34--34
 [] 
  []
 
-<images/case1.pdf, id=128, 267.97827pt x 245.16393pt>
+<images/case1.pdf, id=189, 267.97827pt x 245.16393pt>
 File: images/case1.pdf Graphic file (type pdf)
  <use images/case1.pdf>
 Package pdftex.def Info: images/case1.pdf used on input line 45.
 (pdftex.def)             Requested size: 110.57239pt x 101.15755pt.
 
-<images/case2.pdf, id=129, 317.8253pt x 338.26476pt>
+<images/case2.pdf, id=190, 317.8253pt x 338.26476pt>
 File: images/case2.pdf Graphic file (type pdf)
  <use images/case2.pdf>
 Package pdftex.def Info: images/case2.pdf used on input line 52.
 (pdftex.def)             Requested size: 125.31488pt x 133.3731pt.
 
-[3 <./images/case1.pdf> <./images/case2.pdf>]
-
-Package resizegather Warning: Equation line 1 is too large by 52.06212pt
-(resizegather)                in environment `equation' on input line 77.
-
-
-Overfull \hbox (52.06212pt too wide) in paragraph at lines 77--77
-[] 
- []
-
-
-Package resizegather Warning: Equation line 1 is too large by 54.96126pt
-(resizegather)                in environment `equation' on input line 87.
-
-
-Package resizegather Warning: Equation line 2 is too large by 68.13121pt
-(resizegather)                in environment `equation' on input line 87.
-
-
-Package resizegather Warning: Equation line 3 is too large by 84.2556pt
-(resizegather)                in environment `equation' on input line 87.
-
-
-Overfull \hbox (84.2556pt too wide) in paragraph at lines 87--87
-[] 
- []
-
-
-Package resizegather Warning: Equation line 1 is too large by 91.8556pt
-(resizegather)                in environment `equation' on input line 93.
-
-
-Package resizegather Warning: Equation line 2 is too large by 88.13121pt
-(resizegather)                in environment `equation' on input line 93.
-
-
-Package resizegather Warning: Equation line 3 is too large by 107.03331pt
-(resizegather)                in environment `equation' on input line 93.
-
-
-Overfull \hbox (107.03331pt too wide) in paragraph at lines 93--93
-[] 
- []
-
-<images/dcg.pdf, id=174, 350.3686pt x 524.66313pt>
+<images/dcg.pdf, id=194, 350.3686pt x 524.66313pt>
 File: images/dcg.pdf Graphic file (type pdf)
  <use images/dcg.pdf>
-Package pdftex.def Info: images/dcg.pdf used on input line 100.
+Package pdftex.def Info: images/dcg.pdf used on input line 69.
 (pdftex.def)             Requested size: 118.88445pt x 178.02284pt.
 
-<images/dcg_upup.pdf, id=175, 467.16696pt x 526.35042pt>
+<images/dcg_upup.pdf, id=195, 467.16696pt x 526.35042pt>
 File: images/dcg_upup.pdf Graphic file (type pdf)
 
 <use images/dcg_upup.pdf>
-Package pdftex.def Info: images/dcg_upup.pdf used on input line 107.
+Package pdftex.def Info: images/dcg_upup.pdf used on input line 76.
 (pdftex.def)             Requested size: 156.82466pt x 176.6919pt.
 
-<images/dcg_upup_away.pdf, id=176, 597.04819pt x 524.96124pt>
+<images/dcg_upup_away.pdf, id=196, 597.04819pt x 524.96124pt>
 File: images/dcg_upup_away.pdf Graphic file (type pdf)
 
 <use images/dcg_upup_away.pdf>
-Package pdftex.def Info: images/dcg_upup_away.pdf used on input line 114.
+Package pdftex.def Info: images/dcg_upup_away.pdf used on input line 83.
 (pdftex.def)             Requested size: 202.3529pt x 177.92374pt.
-Package resizegather Info: Equation line 1 is too large by 1.81888pt
-(resizegather)             in environment `equation' on input line 129.
 
-Overfull \hbox (1.81888pt too wide) in paragraph at lines 129--129
+
+Package resizegather Warning: Equation line 1 is too large by 52.06212pt
+(resizegather)                in environment `equation' on input line 94.
+
+
+Overfull \hbox (52.06212pt too wide) in paragraph at lines 94--94
+[] 
+ []
+
+
+Underfull \vbox (badness 1565) has occurred while \output is active []
+
+ [3 <./images/case1.pdf> <./images/case2.pdf>]
+
+Package resizegather Warning: Equation line 1 is too large by 94.04268pt
+(resizegather)                in environment `equation' on input line 104.
+
+
+Overfull \hbox (94.04268pt too wide) in paragraph at lines 104--104
+[] 
+ []
+
+
+Package resizegather Warning: Equation line 1 is too large by 130.93703pt
+(resizegather)                in environment `equation' on input line 110.
+
+
+Overfull \hbox (130.93703pt too wide) in paragraph at lines 110--110
+[] 
+ []
+
+Package resizegather Info: Equation line 1 is too large by 1.81888pt
+(resizegather)             in environment `equation' on input line 134.
+
+Overfull \hbox (1.81888pt too wide) in paragraph at lines 134--134
 [] 
  []
 
 
 Package resizegather Warning: Equation line 1 is too large by 61.18724pt
-(resizegather)                in environment `equation' on input line 136.
+(resizegather)                in environment `equation' on input line 141.
 
 
 Package resizegather Warning: Equation line 2 is too large by 68.13121pt
-(resizegather)                in environment `equation' on input line 136.
+(resizegather)                in environment `equation' on input line 141.
 
 
 Package resizegather Warning: Equation line 3 is too large by 75.50558pt
-(resizegather)                in environment `equation' on input line 136.
+(resizegather)                in environment `equation' on input line 141.
 
 
 Package resizegather Warning: Equation line 4 is too large by 90.36746pt
-(resizegather)                in environment `equation' on input line 136.
+(resizegather)                in environment `equation' on input line 141.
 
 
-Overfull \hbox (90.36746pt too wide) in paragraph at lines 136--136
+Overfull \hbox (90.36746pt too wide) in paragraph at lines 141--141
 [] 
  []
 
 
 Package resizegather Warning: Equation line 1 is too large by 98.08159pt
-(resizegather)                in environment `equation' on input line 143.
+(resizegather)                in environment `equation' on input line 148.
 
 
 Package resizegather Warning: Equation line 2 is too large by 88.13121pt
-(resizegather)                in environment `equation' on input line 143.
+(resizegather)                in environment `equation' on input line 148.
 
 
 Package resizegather Warning: Equation line 3 is too large by 95.50558pt
-(resizegather)                in environment `equation' on input line 143.
+(resizegather)                in environment `equation' on input line 148.
 
 
 Package resizegather Warning: Equation line 4 is too large by 113.14517pt
-(resizegather)                in environment `equation' on input line 143.
+(resizegather)                in environment `equation' on input line 148.
 
 
-Overfull \hbox (113.14517pt too wide) in paragraph at lines 143--143
+Overfull \hbox (113.14517pt too wide) in paragraph at lines 148--148
 [] 
  []
 
-[4]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 149.
-) (./results.tex <images/amt.jpg, id=190, 372.39125pt x 201.25188pt>
+put line 153.
+[4 <./images/dcg.pdf> <./images/dcg_upup.pdf> <./images/dcg_upup_away.pdf>])
+(./results.tex <images/amt.jpg, id=335, 372.39125pt x 201.25188pt>
 File: images/amt.jpg Graphic file (type jpg)
 
 <use images/amt.jpg>
 Package pdftex.def Info: images/amt.jpg used on input line 20.
-(pdftex.def)             Requested size: 213.39566pt x 115.32892pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <./images/dcg.pdf> <./images/dcg_upup.pdf> <./images/dcg_upup_away.pdf>]
-<images/g_acc.jpg, id=307, 349.80687pt x 301.125pt>
+(pdftex.def)             Requested size: 221.93158pt x 119.94135pt.
+ [5 <./images/amt.jpg>]
+<images/g_acc.jpg, id=349, 349.80687pt x 301.125pt>
 File: images/g_acc.jpg Graphic file (type jpg)
  <use images/g_acc.jpg>
 Package pdftex.def Info: images/g_acc.jpg used on input line 41.
 (pdftex.def)             Requested size: 115.48781pt x 99.4129pt.
 
-<images/symbols_corr.jpg, id=308, 372.39125pt x 302.12875pt>
+<images/symbols_corr.jpg, id=350, 372.39125pt x 302.12875pt>
 File: images/symbols_corr.jpg Graphic file (type jpg)
 
 <use images/symbols_corr.jpg>
 Package pdftex.def Info: images/symbols_corr.jpg used on input line 48.
 (pdftex.def)             Requested size: 122.85905pt x 99.67973pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/learning.jpg, id=309, 235.88126pt x 139.52126pt>
+<images/learning.jpg, id=351, 235.88126pt x 139.52126pt>
 File: images/learning.jpg Graphic file (type jpg)
 
 <use images/learning.jpg>
 Package pdftex.def Info: images/learning.jpg used on input line 57.
 (pdftex.def)             Requested size: 172.00192pt x 101.73895pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 108--108
 [][][][][]$\OT1/pcr/m/n/8 https : / / www . youtube . com / playlist ? list =
  []
 
-[6 <./images/amt.jpg> <./images/g_acc.jpg> <./images/symbols_corr.jpg> <./image
-s/learning.jpg>] <images/c1.png, id=322, 542.025pt x 429.605pt>
+<images/c1.png, id=357, 542.025pt x 429.605pt>
 File: images/c1.png Graphic file (type png)
-
-<use images/c1.png>
+ <use images/c1.png>
 Package pdftex.def Info: images/c1.png used on input line 145.
 (pdftex.def)             Requested size: 74.94221pt x 59.39699pt.
- <images/c2.png, id=323, 544.0325pt x 427.5975pt>
-File: images/c2.png Graphic file (type png)
 
-<use images/c2.png>
+<images/c2.png, id=358, 544.0325pt x 427.5975pt>
+File: images/c2.png Graphic file (type png)
+ <use images/c2.png>
 Package pdftex.def Info: images/c2.png used on input line 152.
 (pdftex.def)             Requested size: 76.17201pt x 59.86977pt.
- <images/c3.png, id=324, 544.0325pt x 424.58624pt>
-File: images/c3.png Graphic file (type png)
 
-<use images/c3.png>
+<images/c3.png, id=359, 544.0325pt x 424.58624pt>
+File: images/c3.png Graphic file (type png)
+ <use images/c3.png>
 Package pdftex.def Info: images/c3.png used on input line 159.
 (pdftex.def)             Requested size: 77.4018pt x 60.40698pt.
- <images/1.png, id=325, 638.385pt x 315.1775pt>
+
+<images/1.png, id=360, 638.385pt x 315.1775pt>
 File: images/1.png Graphic file (type png)
-
-<use images/1.png>
+ <use images/1.png>
 Package pdftex.def Info: images/1.png used on input line 170.
-(pdftex.def)             Requested size: 75.8804pt x 37.45897pt.
- <images/2.png, id=326, 636.3775pt x 314.17375pt>
+(pdftex.def)             Requested size: 110.57239pt x 54.5894pt.
+
+<images/2.png, id=361, 636.3775pt x 314.17375pt>
 File: images/2.png Graphic file (type png)
-
-<use images/2.png>
+ <use images/2.png>
 Package pdftex.def Info: images/2.png used on input line 177.
-(pdftex.def)             Requested size: 75.8804pt x 37.45952pt.
- <images/3.png, id=327, 637.38126pt x 313.17pt>
+(pdftex.def)             Requested size: 110.57239pt x 54.58812pt.
+
+<images/3.png, id=362, 637.38126pt x 313.17pt>
 File: images/3.png Graphic file (type png)
-
-<use images/3.png>
+ <use images/3.png>
 Package pdftex.def Info: images/3.png used on input line 184.
-(pdftex.def)             Requested size: 75.8804pt x 37.2825pt.
- <images/4.png, id=328, 634.37pt x 311.1625pt>
+(pdftex.def)             Requested size: 110.57239pt x 54.3277pt.
+
+<images/4.png, id=363, 634.37pt x 311.1625pt>
 File: images/4.png Graphic file (type png)
-
-<use images/4.png>
+ <use images/4.png>
 Package pdftex.def Info: images/4.png used on input line 191.
-(pdftex.def)             Requested size: 75.8804pt x 37.21918pt.
- <images/5.png, id=329, 636.3775pt x 315.1775pt>
+(pdftex.def)             Requested size: 110.57239pt x 54.23584pt.
+
+<images/5.png, id=364, 636.3775pt x 315.1775pt>
 File: images/5.png Graphic file (type png)
-
-<use images/5.png>
+ <use images/5.png>
 Package pdftex.def Info: images/5.png used on input line 198.
-(pdftex.def)             Requested size: 75.8804pt x 37.5792pt.
- <images/6.png, id=330, 637.38126pt x 314.17375pt>
-File: images/6.png Graphic file (type png)
+(pdftex.def)             Requested size: 110.57239pt x 54.76253pt.
 
-<use images/6.png>
+<images/6.png, id=365, 637.38126pt x 314.17375pt>
+File: images/6.png Graphic file (type png)
+ <use images/6.png>
 Package pdftex.def Info: images/6.png used on input line 205.
-(pdftex.def)             Requested size: 75.8804pt x 37.402pt.
-) (./related.tex) (./conclusion.tex [7 <./images/c1.png> <./images/c2.png> <./i
-mages/c3.png>]) (./main.bbl)
+(pdftex.def)             Requested size: 110.57239pt x 54.50183pt.
+
+Underfull \hbox (badness 3049) in paragraph at lines 168--209
+[][]   []
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 168--209
+[]   []
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./related.tex [6 <./images/g_acc.jpg> <./images/symbols_corr.jpg> <./images/
+learning.jpg>]) (./conclusion.tex [7 <./images/c1.png> <./images/c2.png> <./ima
+ges/c3.png> <./images/1.png> <./images/2.png> <./images/3.png> <./images/4.png>
+ <./images/5.png> <./images/6.png>]) (./main.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1628,64 +1518,61 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[8 <./images/1.png> <./images/2.png> <./images/3.png> <./images/4.png> <./image
-s/5.png> <./images/6.png>]
+[8]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C097F7B79FBB863D00B53902101ADAAD;1002.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 12938E20F03037838AA0BAC01C4BE4D0;1129.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 39851 strings out of 493014
- 929908 string characters out of 6133351
- 1086561 words of memory out of 5000000
- 42659 multiletter control sequences out of 15000+600000
+ 39888 strings out of 493014
+ 930529 string characters out of 6133351
+ 1087561 words of memory out of 5000000
+ 42695 multiletter control sequences out of 15000+600000
  53590 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,19n,77p,10392b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/ti
-mes/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on main.pdf (8 pages, 4235450 bytes).
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on main.pdf (8 pages, 4187459 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 69 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 523 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 
