@@ -17,7 +17,7 @@ These image-command pairs were saved for evaluating whether a robot, when placed
 An example screenshot, with an annotation supplied by a user, is shown in Fig.~\ref{fig:amt}.
 \begin{figure}[h]
 	\centering
-    \includegraphics[width=7.8cm]{amt}
+    \includegraphics[width=8.2cm]{amt}
 	\caption{A simulated world with a highlighted object presented on Amazon Mechanical Turk, labeled by a user as ``Move to the red fire hydrant.''}
 	\label{fig:amt}
 \end{figure}
@@ -35,27 +35,27 @@ We further divide the grounding accuracy results to examine when phrases are gro
 %The primary metric used in evaluating the success of DCG-UPUP-Away is the grounding accuracy: how likely is the turtlebot to correctly execute the natural language command.
 As discussed previosuly, the turtlebot is retrained between iterations, thus the grounding accuracy may change as a function of iteration number. In fact, the mean grounding accuracy remains between $70\%$ and $90\%$ across all iterations, as shown in Figure~\ref{fig:g_acc}. Although the overall grounding accuracy remains relatively constant, the underlying behavior within the DCG-UPUP-Away model changes over the course of a trial. For example, Fig.~\ref{fig:g_acc_split} illustrates 3 curves showing what fraction of correctly grounded phrases refer to known objects, unknown objects, or learned objects as a function of iteration number. In the first iteration, nearly $70\%$ of correctly grounded commands refer to known objects, but by the 10$^\text{th}$ iteration that number has fallen to nearly $10\%$, replaced almost entirely by correctly grounding to learned objects.
 
-\begin{figure*}[t!]
+\begin{figure}[t!]
 \centering
-\begin{subfigure}[b]{0.8\columnwidth}
+\begin{subfigure}[b]{\columnwidth}
 \centering
-\includegraphics[width=\textwidth]{g_acc}
+\includegraphics[width=0.9\textwidth]{g_acc}
 \caption{Overall grounding accuracy.}
 \label{fig:g_acc}
 \end{subfigure}
-~~~~
-\begin{subfigure}[b]{0.845\columnwidth}
+\vskip1ex
+\begin{subfigure}[b]{\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{symbols_corr}
 \caption{Number of learned symbols.}
 \label{fig:symbols}
 \end{subfigure}
 \caption{The performance results of the simulation study.}
-\end{figure*}
+\end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\columnwidth]{learning}
+\includegraphics[width=\columnwidth]{split_cases.eps}
 \caption{The percentage of symbols during the simulations.}
 \label{fig:g_acc_split}
 \end{figure}
