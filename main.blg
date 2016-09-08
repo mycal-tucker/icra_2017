@@ -8,57 +8,57 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref.bib
-You're missing a field name---line 244 of file ref.bib
+You're missing a field name---line 252 of file ref.bib
  :  
  :  %DOI       = {10.1348/026151005X55370}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 289 of file ref.bib
+You're missing a field name---line 297 of file ref.bib
  :  
  :  %url = {https://www.aaai.org/ocs/index.php/AAAI/AAAI13/paper/view/6176}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 303 of file ref.bib
+You're missing a field name---line 311 of file ref.bib
  : 
  : %url="http://dx.doi.org/10.1007/BF01589116"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 349 of file ref.bib
+You're missing a field name---line 357 of file ref.bib
  : 
  : %doi="10.1007/978-3-319-00065-7_33",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 456 of file ref.bib
+I was expecting a `,' or a `}'---line 464 of file ref.bib
  :  
  :  number = "1",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 574 of file ref.bib
+You're missing a field name---line 582 of file ref.bib
  :   
  :   %url       = {http://www.aaai.org/Library/AAAI/1994/aaai94-116.php},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 597 of file ref.bib
+You're missing a field name---line 605 of file ref.bib
  :  
  :  %url = {http://doi.acm.org/10.1145/1008722.1008727},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 611 of file ref.bib
+You're missing a field name---line 619 of file ref.bib
  : 
  : %url = {http://dx.doi.org/10.1207/s15516709cog2601_4},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 796 of file ref.bib
+I was expecting a `,' or a `}'---line 804 of file ref.bib
  : 
  : %url="http://www.cs.utexas.edu/users/ai-lab/?zelle:aaai96",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 808 of file ref.bib
+You're missing a field name---line 816 of file ref.bib
  :  
  :  %url = {http://dl.acm.org/citation.cfm?id=1706543.1706546},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 824 of file ref.bib
+You're missing a field name---line 832 of file ref.bib
  :  
  :  %url = {http://dl.acm.org/citation.cfm?id=1620270.1620341},
 (Error may have been on previous line)
@@ -71,45 +71,45 @@ Warning--I didn't find a database entry for "DBLP:conf/aaai/1994-1"
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 24 entries,
+You've used 22 entries,
             3975 wiz_defined-function locations,
-            944 strings with 12111 characters,
-and the built_in function-call counts, 17534 in all, are:
-= -- 1273
-> -- 498
-< -- 118
-+ -- 267
-- -- 95
-* -- 830
-:= -- 2506
-add.period$ -- 50
-call.type$ -- 24
-change.case$ -- 23
-chr.to.int$ -- 294
-cite$ -- 24
-duplicate$ -- 1296
-empty$ -- 1572
-format.name$ -- 115
-if$ -- 4074
+            929 strings with 11486 characters,
+and the built_in function-call counts, 15415 in all, are:
+= -- 1134
+> -- 409
+< -- 101
++ -- 219
+- -- 77
+* -- 727
+:= -- 2245
+add.period$ -- 46
+call.type$ -- 22
+change.case$ -- 22
+chr.to.int$ -- 249
+cite$ -- 22
+duplicate$ -- 1156
+empty$ -- 1393
+format.name$ -- 95
+if$ -- 3567
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 259
-newline$ -- 92
-num.names$ -- 24
-pop$ -- 682
+int.to.str$ -- 22
+missing$ -- 228
+newline$ -- 86
+num.names$ -- 22
+pop$ -- 593
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1339
+skip$ -- 1184
 stack$ -- 0
-substring$ -- 708
-swap$ -- 992
-text.length$ -- 20
+substring$ -- 602
+swap$ -- 869
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 0
 warning$ -- 0
-while$ -- 71
-width$ -- 26
-write$ -- 230
+while$ -- 62
+width$ -- 24
+write$ -- 213
 (There were 12 error messages)

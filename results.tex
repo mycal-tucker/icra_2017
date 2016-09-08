@@ -17,7 +17,7 @@ These image-command pairs were saved for evaluating whether a robot, when placed
 An example screenshot, with an annotation supplied by a user, is shown in Fig.~\ref{fig:amt}.
 \begin{figure}[h]
 	\centering
-    \includegraphics[width=7.5cm]{amt}
+    \includegraphics[width=8.2cm]{amt}
 	\caption{A simulated world with a highlighted object presented on Amazon Mechanical Turk, labeled by a user as ``Move to the red fire hydrant.''}
 	\label{fig:amt}
 \end{figure}
@@ -35,15 +35,16 @@ We further divide the grounding accuracy results to examine when phrases are gro
 %The primary metric used in evaluating the success of DCG-UPUP-Away is the grounding accuracy: how likely is the turtlebot to correctly execute the natural language command.
 As discussed previosuly, the turtlebot is retrained between iterations, thus the grounding accuracy may change as a function of iteration number. In fact, the mean grounding accuracy remains between $70\%$ and $90\%$ across all iterations, as shown in Figure~\ref{fig:g_acc}. Although the overall grounding accuracy remains relatively constant, the underlying behavior within the DCG-UPUP-Away model changes over the course of a trial. For example, Fig.~\ref{fig:g_acc_split} illustrates 3 curves showing what fraction of correctly grounded phrases refer to known objects, unknown objects, or learned objects as a function of iteration number. In the first iteration, nearly $70\%$ of correctly grounded commands refer to known objects, but by the 10$^\text{th}$ iteration that number has fallen to nearly $10\%$, replaced almost entirely by correctly grounding to learned objects.
 
-\begin{figure}[h!]
-\begin{subfigure}[b]{0.47\columnwidth}
+\begin{figure}[t!]
 \centering
-\includegraphics[width=\textwidth]{g_acc}
+\begin{subfigure}[b]{\columnwidth}
+\centering
+\includegraphics[width=0.9\textwidth]{g_acc}
 \caption{Overall grounding accuracy.}
 \label{fig:g_acc}
 \end{subfigure}
-~
-\begin{subfigure}[b]{0.50\columnwidth}
+\vskip1ex
+\begin{subfigure}[b]{\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{symbols_corr}
 \caption{Number of learned symbols.}
@@ -54,7 +55,7 @@ As discussed previosuly, the turtlebot is retrained between iterations, thus the
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\columnwidth]{learning}
+\includegraphics[width=\columnwidth]{split_cases.eps}
 \caption{The percentage of symbols during the simulations.}
 \label{fig:g_acc_split}
 \end{figure}
@@ -86,7 +87,7 @@ As expected, the blue curve starts at $3$ (for the cube, sphere, and cylinder), 
 In $10\%$ of trials, all $8$ symbols were correctly learned. In other trials the DCG-UPUP-Away model incorrectly grounded unknown phrases (and therefore learned an incorrect symbol) or the 10 iterations collectively never referred to the five initially unknown objects, preventing the DCG-UPUP-Away model from ever learning the new symbol.
 Furthermore, learning symbols correctly improves the grounding accuracy: for each additional correctly learned symbol, the turtlebot is over $4\%$ more likely to correctly ground a command. %(TODO generate p values via ANOVA.)
 
-\subsection{Hardware Demonstration}
+\subsection{Physical Demonstration}
 In addition to the simulation studies, the DCG-UPUP-Away model was tested on an actual turtlebot in a laboratory setting.
 The turtlebot was placed facing %a cylinder (known) and 
 a cone (unknown).
@@ -144,71 +145,71 @@ The experimental results demonstrate two important behaviors: 1) the turtlebot m
 \centering
 \includegraphics[width=\textwidth]{c1.png}
 \caption{t= 0 sec.}
-\label{fig:g_acc}
+\label{fig:exp_new_1}
 \end{subfigure}
 ~
 \begin{subfigure}[b]{0.31\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{c2.png}
 \caption{t= 45 sec.}
-\label{fig:symbols}
+\label{fig:exp_new_2}
 \end{subfigure}
 ~
 \begin{subfigure}[b]{0.315\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{c3.png}
 \caption{t= 50 sec.}
-\label{fig:g_acc_split}
+\label{fig:exp_new_3}
 \end{subfigure}
 \caption{An illustration of learning new symbol. The turtlebot initially does not know what a cone is, a command is given as ``move towards the cone". (a) Since there is an unknown object in its perceived world, it grounds the unknown phrase ``cone" to the unknown object, (b,c) it drives to the cone.}
 \label{fig:cone}
 \end{figure}
 
-\begin{figure*}
-\begin{subfigure}[b]{0.15\textwidth}
+\begin{figure}[h!]
+\begin{subfigure}[b]{0.45\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{1.png}
 \caption{t=0 sec.}
-\label{fig:g_acc}
+\label{fig:exp1}
 \end{subfigure}
 ~
-\begin{subfigure}[b]{0.15\textwidth}
+\begin{subfigure}[b]{0.45\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{2.png}
 \caption{t=25 sec.}
-\label{fig:symbols}
+\label{fig:exp2}
 \end{subfigure}
 ~
-\begin{subfigure}[b]{0.15\textwidth}
+\begin{subfigure}[b]{0.45\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{3.png}
 \caption{t=50 sec.}
-\label{fig:g_acc_split}
+\label{fig:exp3}
 \end{subfigure}
 ~
-\begin{subfigure}[b]{0.15\textwidth}
+\begin{subfigure}[b]{0.45\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{4.png}
 \caption{t=70 sec.}
-\label{fig:g_acc}
+\label{fig:exp4}
 \end{subfigure}
 ~
-\begin{subfigure}[b]{0.15\textwidth}
+\begin{subfigure}[b]{0.45\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{5.png}
 \caption{t=95 sec.}
-\label{fig:symbols}
+\label{fig:exp5}
 \end{subfigure}
-~
-\begin{subfigure}[b]{0.15\textwidth}
+~~~~~~~
+\begin{subfigure}[b]{0.45\columnwidth}
 \centering
 \includegraphics[width=\textwidth]{6.png}
 \caption{t=120 sec. }
-\label{fig:g_acc_split}
+\label{fig:exp6}
 \end{subfigure}
 \caption{An illustration of grounding to a hypothetical object. The robot initially knows all objects in the world other than a crate. The turtlebot is given a command as ``move towards the crate". (a) First, it does not see an unknown object in its perceived world so it creates a hypothetical unknown object, (b,c,d) it explores the world by rotating at its current location until it perceives an unknown object, (e) It perceives an unknown object and grounds to it, (f) it drives to the crate.}
 \label{fig:crate}
-\end{figure*}
+\end{figure}
 
 
 \subsection{Limitations}
