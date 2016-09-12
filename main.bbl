@@ -35,6 +35,12 @@ R.~Paul, J.~Arkin, N.~Roy, and T.~M. Howard, ``Efficient grounding of abstract
   in \emph{Proceedings of Robotics: Science and Systems (RSS)}, Ann Arbor,
   Michigan, USA, June 2016.
 
+\bibitem{grimmett2013}
+H.~Grimmett, R.~Paul, R.~Triebel, and I.~Posner, ``Knowing when we don't know:
+  Introspective classification for mission-critical decision making,'' in
+  \emph{IEEE International Conference on Robotics and Automation (ICRA)}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 4531--4538.
+
 \bibitem{olson2011}
 E.~Olson, ``{AprilTag}: A robust and flexible visual fiducial system,'' in
   \emph{Proceedings of the {IEEE} International Conference on Robotics and
