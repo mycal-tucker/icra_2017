@@ -1,18 +1,18 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Grounding Natural Language Instructions}{}% 2
-\BOOKMARK [1][-]{section.3}{Technical Approach}{}% 3
+\BOOKMARK [1][-]{section.3}{Probabilistic Model for Grounding Unknown Symbols}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Grounding Unknown Phrases or Objects}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Hypothesized Groundings out of Perception}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Grounding Hypothetical Objects Outside the Field of View}{section.3}% 5
 \BOOKMARK [2][-]{subsection.3.3}{Resolving Ambiguity via Linguistic Context}{section.3}% 6
 \BOOKMARK [1][-]{section.4}{Online Learning}{}% 7
 \BOOKMARK [2][-]{subsection.4.1}{Exploring the Environment}{section.4}% 8
 \BOOKMARK [2][-]{subsection.4.2}{Incremental Unsupervised Learning}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{Evaluation}{}% 10
-\BOOKMARK [2][-]{subsection.5.1}{Experimental Setup}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.2}{Grounding Accuracy}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.3}{Learned Symbols}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.4}{Physical Demonstration}{section.5}% 14
-\BOOKMARK [2][-]{subsection.5.5}{Limitations}{section.5}% 15
-\BOOKMARK [1][-]{section.6}{Related Works}{}% 16
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 17
+\BOOKMARK [1][-]{section.5}{Corpus Generation via User Study}{}% 10
+\BOOKMARK [1][-]{section.6}{Results}{}% 11
+\BOOKMARK [2][-]{subsection.6.1}{Grounding Accuracy}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.2}{Learned Symbols}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.3}{Physical Demonstration}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.4}{Limitations}{section.6}% 15
+\BOOKMARK [1][-]{section.7}{Related Works}{}% 16
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 17
 \BOOKMARK [1][-]{section*.9}{References}{}% 18
