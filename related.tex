@@ -1,6 +1,6 @@
-\section{Related Works}
+\section{Related Work}
 \label{sec:related}
-This work is closely related to solving the grounding problem over probabilistic graphical models that contain three main variables: grounding variables, language command, and the world model.
+Our work is closely related to solving the grounding problem over probabilistic graphical models that contain three main variables: grounding variables, language command, and the world model.
 In the previous works, the domains of the grounding variables, the language command, and the world model have been restricted to the known phrases and the perecived groundings~\cite{g3,dcg}.
 Furthermore, although some works reason about unknown environments, many probabilistic grounding techniques assume fully observable worlds~\cite{citeLangNoisySensor,outside1}.
 
@@ -18,10 +18,10 @@ However, a critical issue is the proper balance between too many questions and n
 One common approach for autonomous language learning provides a robot with semantic representations of the world that must be associated with language.
 Such associations may be formally expressed using predicate logic, but ultimately the problem of language acquisition is reframed as a mapping problem from words to pre-defined semantics (e.g., \cite{langlearn1,langlearn2,formal1,formal2}).
 Unfortunately, hand-labeled representations necessarily require intensive human involvement in generating training data~\cite{mooneypivot}.
-As a result, some studies consider the opposite approach and try to associate words directly to objects or actions without creating formal symbolic representations.
-For example, using online raw video data and sentences, a system is able to learn shape categories without being told ahead of time that four right angles define rectangular objects~\cite{langlearn3,langlearn4}.
+As a result, some studies considered the opposite approach and try to associate words directly to objects or actions without creating formal symbolic representations.
+For example, the capability of learning shape categories without being told ahead of time (e.g., four right angles define rectangular objects) was demonstrated by using online raw video data and sentences in \cite{langlearn3,langlearn4}.
 
-Finally, some studies in the literature consider the idea of hypothesizing objects outside the field of view. For example, Duvallet et al. uses a framework to propose a latent map partially observed by the language command~\cite{citeLangNoisySensor}.
+Finally, some studies in the literature considered the idea of hypothesizing objects outside the field of view. For example, Duvallet et al. used a framework to propose a latent map partially observed by the language command~\cite{citeLangNoisySensor}.
 Accordingly, in the case of a ball outside the door, the phrase ``pick up the ball outside the door'' generates a region of high probability near the door and low probability further away.
-Sampling from this distribution, as well as updating the distribution as more observations are made, yields a useful map to plan in.
-Similarly, some other works generate distributions over maps or exactly place objects in unknown environments if their locations are uniquely described~\cite{learningSemanticMaps,outside1}.
+Sampling from this distribution, as well as updating it as more observations are made, yields a useful map to plan in.
+Similarly, some other work generated distributions over maps or exactly place objects in unknown environments if their locations are uniquely described~\cite{learningSemanticMaps,outside1}.
