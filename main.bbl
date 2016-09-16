@@ -46,11 +46,33 @@ H.~Grimmett, R.~Paul, R.~Triebel, and I.~Posner, ``Knowing when we don't know:
   \emph{IEEE International Conference on Robotics and Automation (ICRA)}.\hskip
   1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 4531--4538.
 
-\bibitem{olson2011}
-E.~Olson, ``{AprilTag}: A robust and flexible visual fiducial system,'' in
-  \emph{Proceedings of the {IEEE} International Conference on Robotics and
-  Automation ({ICRA})}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, May 2011,
-  pp. 3400--3407.
+\bibitem{zitnick2014edge}
+C.~L. Zitnick and P.~Doll{\'a}r, ``Edge boxes: Locating object proposals from
+  edges,'' in \emph{European Conference on Computer Vision}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2014, pp. 391--405.
+
+\bibitem{bosch2007image}
+A.~Bosch, A.~Zisserman, and X.~Munoz, ``Image classification using random
+  forests and ferns,'' in \emph{2007 IEEE 11th International Conference on
+  Computer Vision}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2007, pp.
+  1--8.
+
+\bibitem{vedaldi2010vlfeat}
+A.~Vedaldi and B.~Fulkerson, ``Vlfeat: An open and portable library of computer
+  vision algorithms,'' in \emph{Proceedings of the 18th ACM international
+  conference on Multimedia}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2010,
+  pp. 1469--1472.
+
+\bibitem{fan2008liblinear}
+R.-E. Fan, K.-W. Chang, C.-J. Hsieh, X.-R. Wang, and C.-J. Lin, ``Liblinear: A
+  library for large linear classification,'' \emph{Journal of machine learning
+  research}, vol.~9, no. Aug, pp. 1871--1874, 2008.
+
+\bibitem{calli2015ycb}
+B.~Calli, A.~Singh, A.~Walsman, S.~Srinivasa, P.~Abbeel, and A.~M. Dollar,
+  ``The ycb object and model set: Towards common benchmarks for manipulation
+  research,'' in \emph{Advanced Robotics (ICAR), 2015 International Conference
+  on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2015, pp. 510--517.
 
 \bibitem{citeLangNoisySensor}
 F.~Duvallet, M.~Walter, T.~Howard, S.~Hemachandra, J.~H. {Oh }, S.~Teller,

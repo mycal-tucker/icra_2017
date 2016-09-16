@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 SEP 2016 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 SEP 2016 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1213,7 +1213,7 @@ LaTeX Font Info:    Try loading font information for OMS+pcr on input line 13.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
-LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
@@ -1231,13 +1231,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
 \OT1/ptm/m/n/8 In-sti-tute of Tech-nol-ogy, Cam-bridge, MA 02139, USA
  []
 
+
+Overfull \hbox (7.58217pt too wide) in paragraph at lines 13--13
+\OMS/cmsy/m/n/8 f\OT1/pcr/m/n/8 mycal,daksaray,rohanp,gjstein,nickroy\OMS/cmsy/
+m/n/8 g\OT1/pcr/m/n/8 @csail.mit.edu| 
+ []
+
 (./abstract.tex) (./introduction.tex
 <images/motivation.pdf, id=87, 563.30452pt x 354.5245pt>
 File: images/motivation.pdf Graphic file (type pdf)
 
 <use images/motivation.pdf>
 Package pdftex.def Info: images/motivation.pdf used on input line 13.
-(pdftex.def)             Requested size: 245.71811pt x 154.64427pt.
+(pdftex.def)             Requested size: 221.14479pt x 139.17822pt.
 ) (./background.tex [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updma
 p/pdftex.map}
 
@@ -1306,11 +1312,11 @@ Overfull \hbox (21.09291pt too wide) in paragraph at lines 112--112
  []
 
 [4 <./images/dcg_upup.pdf> <./images/dcg_upup_away.pdf>]) (./results.tex
-<images/amt.jpg, id=296, 372.39125pt x 201.25188pt>
+<images/amt.jpg, id=293, 372.39125pt x 201.25188pt>
 File: images/amt.jpg Graphic file (type jpg)
  <use images/amt.jpg>
 Package pdftex.def Info: images/amt.jpg used on input line 23.
-(pdftex.def)             Requested size: 213.39566pt x 115.32892pt.
+(pdftex.def)             Requested size: 170.71652pt x 92.26375pt.
 
 [5 <./images/amt.jpg>]
 Package epstopdf Info: Source file: <images/grounding_accuracy.eps>
@@ -1322,23 +1328,16 @@ Package epstopdf Info: Source file: <images/grounding_accuracy.eps>
 (epstopdf)                    size: 7898 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/grounding_accuracy-
 eps-converted-to.pdf images/grounding_accuracy.eps>
-(epstopdf)             \includegraphics on input line 46.
+(epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/grounding_accuracy-eps-converted-to.pdf, id=304, 698.61pt x 358.33875pt
+<images/grounding_accuracy-eps-converted-to.pdf, id=300, 698.61pt x 358.33875pt
 >
 File: images/grounding_accuracy-eps-converted-to.pdf Graphic file (type pdf)
  <use images/grounding_accuracy-eps-converted-to.pdf>
 Package pdftex.def Info: images/grounding_accuracy-eps-converted-to.pdf used on
- input line 46.
-(pdftex.def)             Requested size: 221.14479pt x 113.42955pt.
-
-<images/symbols_corr.jpg, id=305, 372.39125pt x 302.12875pt>
-File: images/symbols_corr.jpg Graphic file (type jpg)
-
-<use images/symbols_corr.jpg>
-Package pdftex.def Info: images/symbols_corr.jpg used on input line 54.
-(pdftex.def)             Requested size: 184.28857pt x 149.5196pt.
+ input line 45.
+(pdftex.def)             Requested size: 161.8885pt x 88.43622pt.
 Package epstopdf Info: Source file: <images/split_cases.eps>
 (epstopdf)                    date: 2016-09-15 12:17:18
 (epstopdf)                    size: 21751 bytes
@@ -1347,114 +1346,96 @@ Package epstopdf Info: Source file: <images/split_cases.eps>
 (epstopdf)                    size: 9482 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/split_cases-eps-con
 verted-to.pdf images/split_cases.eps>
-(epstopdf)             \includegraphics on input line 63.
+(epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/split_cases-eps-converted-to.pdf, id=306, 702.625pt x 414.54875pt>
+<images/split_cases-eps-converted-to.pdf, id=302, 702.625pt x 414.54875pt>
 File: images/split_cases-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/split_cases-eps-converted-to.pdf>
 Package pdftex.def Info: images/split_cases-eps-converted-to.pdf used on input 
-line 63.
-(pdftex.def)             Requested size: 221.14479pt x 130.47601pt.
+line 52.
+(pdftex.def)             Requested size: 166.94463pt x 101.26538pt.
 
-<images/1.png, id=308, 638.385pt x 315.1775pt>
-File: images/1.png Graphic file (type png)
- <use images/1.png>
-Package pdftex.def Info: images/1.png used on input line 99.
-(pdftex.def)             Requested size: 78.41232pt x 38.70937pt.
+<images/fig6.pdf, id=304, 722.7pt x 542.025pt>
+File: images/fig6.pdf Graphic file (type pdf)
+ <use images/fig6.pdf>
+Package pdftex.def Info: images/fig6.pdf used on input line 60.
+(pdftex.def)             Requested size: 156.82466pt x 122.87036pt.
 
-<images/2.png, id=310, 636.3775pt x 314.17375pt>
-File: images/2.png Graphic file (type png)
- <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 106.
-(pdftex.def)             Requested size: 78.41232pt x 38.71072pt.
+<images/frame0037.jpg, id=310, 642.4pt x 481.8pt>
+File: images/frame0037.jpg Graphic file (type jpg)
+ <use images/frame0037.jpg>
+Package pdftex.def Info: images/frame0037.jpg used on input line 129.
+(pdftex.def)             Requested size: 55.64821pt x 41.7354pt.
 
-<images/3.png, id=311, 637.38126pt x 313.17pt>
-File: images/3.png Graphic file (type png)
- <use images/3.png>
-Package pdftex.def Info: images/3.png used on input line 113.
-(pdftex.def)             Requested size: 78.41232pt x 38.52493pt.
+<images/frame0044.jpg, id=311, 642.4pt x 481.8pt>
+File: images/frame0044.jpg Graphic file (type jpg)
+ <use images/frame0044.jpg>
+Package pdftex.def Info: images/frame0044.jpg used on input line 137.
+(pdftex.def)             Requested size: 55.64821pt x 41.7354pt.
 
-<images/4.png, id=312, 634.37pt x 311.1625pt>
-File: images/4.png Graphic file (type png)
- <use images/4.png>
-Package pdftex.def Info: images/4.png used on input line 120.
-(pdftex.def)             Requested size: 78.41232pt x 38.4584pt.
+<images/frame0045.jpg, id=312, 642.4pt x 481.8pt>
+File: images/frame0045.jpg Graphic file (type jpg)
+ <use images/frame0045.jpg>
+Package pdftex.def Info: images/frame0045.jpg used on input line 145.
+(pdftex.def)             Requested size: 55.64821pt x 41.7354pt.
 
-<images/5.png, id=313, 636.3775pt x 315.1775pt>
-File: images/5.png Graphic file (type png)
- <use images/5.png>
-Package pdftex.def Info: images/5.png used on input line 127.
-(pdftex.def)             Requested size: 78.41232pt x 38.83441pt.
+<images/frame0047.jpg, id=313, 642.4pt x 481.8pt>
+File: images/frame0047.jpg Graphic file (type jpg)
+ <use images/frame0047.jpg>
+Package pdftex.def Info: images/frame0047.jpg used on input line 153.
+(pdftex.def)             Requested size: 55.64821pt x 41.7354pt.
 
-<images/6.png, id=314, 637.38126pt x 314.17375pt>
-File: images/6.png Graphic file (type png)
- <use images/6.png>
-Package pdftex.def Info: images/6.png used on input line 134.
-(pdftex.def)             Requested size: 78.41232pt x 38.6484pt.
- [6 <./images/grounding_accuracy-eps-converted-to.pdf> <./images/symbols_corr.j
-pg> <./images/split_cases-eps-converted-to.pdf>]
-Underfull \hbox (badness 2460) in paragraph at lines 160--162
-[]\OT1/ptm/m/n/10 The ex-per-i-men-tal re-sults demon-strate two im-por-tant
- []
+<images/frame0048.jpg, id=314, 642.4pt x 481.8pt>
+File: images/frame0048.jpg Graphic file (type jpg)
+ <use images/frame0048.jpg>
+Package pdftex.def Info: images/frame0048.jpg used on input line 161.
+(pdftex.def)             Requested size: 55.64821pt x 41.7354pt.
 
+<images/frame0049.jpg, id=315, 642.4pt x 481.8pt>
+File: images/frame0049.jpg Graphic file (type jpg)
+ <use images/frame0049.jpg>
+Package pdftex.def Info: images/frame0049.jpg used on input line 169.
+(pdftex.def)             Requested size: 55.64821pt x 41.7354pt.
 
-Underfull \hbox (badness 3364) in paragraph at lines 160--162
-\OT1/ptm/m/n/10 be-hav-iors: 1) the Turtle-Bot must have learned what
- []
+<images/frame0050.jpg, id=316, 642.4pt x 481.8pt>
+File: images/frame0050.jpg Graphic file (type jpg)
+ <use images/frame0050.jpg>
+Package pdftex.def Info: images/frame0050.jpg used on input line 177.
+(pdftex.def)             Requested size: 55.64821pt x 41.7354pt.
 
+<images/frame0056.jpg, id=317, 642.4pt x 481.8pt>
+File: images/frame0056.jpg Graphic file (type jpg)
+ <use images/frame0056.jpg>
+Package pdftex.def Info: images/frame0056.jpg used on input line 185.
+(pdftex.def)             Requested size: 55.64821pt x 41.7354pt.
 
-Underfull \hbox (badness 4531) in paragraph at lines 160--162
-\OT1/ptm/m/n/10 a cone was, oth-er-wise the un-known phrase ``crate''
- []
+[6] <images/frame0058.jpg, id=329, 642.4pt x 481.8pt>
+File: images/frame0058.jpg Graphic file (type jpg)
 
+<use images/frame0058.jpg>
+Package pdftex.def Info: images/frame0058.jpg used on input line 250.
+(pdftex.def)             Requested size: 74.94221pt x 56.20348pt.
+ <images/frame0062.jpg, id=330, 642.4pt x 481.8pt>
+File: images/frame0062.jpg Graphic file (type jpg)
 
-Underfull \hbox (badness 2181) in paragraph at lines 160--162
-\OT1/ptm/m/n/10 would have been grounded to the cone, and 2) the
- []
+<use images/frame0062.jpg>
+Package pdftex.def Info: images/frame0062.jpg used on input line 257.
+(pdftex.def)             Requested size: 76.17201pt x 57.12244pt.
+ <images/frame0066.jpg, id=331, 642.4pt x 481.8pt>
+File: images/frame0066.jpg Graphic file (type jpg)
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
-\OT1/ptm/m/n/10 Turtle-Bot grounded the com-mand to an un-known
- []
-
-
-Underfull \hbox (badness 6542) in paragraph at lines 160--162
-\OT1/ptm/m/n/10 in-ter-ested reader is re-ferred to the fol-low-ing link,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
-[]$\OT1/pcr/m/n/10 https : / / www . youtube . com / playlist ? list =
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 160--162
-\OT1/pcr/m/n/10 PL8sYMUToK9s6dAu3qMHHOef8FyhOnDK4E$[]\OT1/ptm/m/n/10 , for the
- []
-
-<images/c1.png, id=336, 542.025pt x 429.605pt>
-File: images/c1.png Graphic file (type png)
- <use images/c1.png>
-Package pdftex.def Info: images/c1.png used on input line 197.
-(pdftex.def)             Requested size: 74.94221pt x 59.39699pt.
-
-<images/c2.png, id=337, 544.0325pt x 427.5975pt>
-File: images/c2.png Graphic file (type png)
- <use images/c2.png>
-Package pdftex.def Info: images/c2.png used on input line 204.
-(pdftex.def)             Requested size: 76.17201pt x 59.86977pt.
-
-<images/c3.png, id=338, 544.0325pt x 424.58624pt>
-File: images/c3.png Graphic file (type png)
- <use images/c3.png>
-Package pdftex.def Info: images/c3.png used on input line 211.
-(pdftex.def)             Requested size: 77.4018pt x 60.40698pt.
-)
-(./related.tex) (./conclusion.tex) [7] (./main.bbl [8 <./images/1.png> <./image
-s/2.png> <./images/3.png> <./images/4.png> <./images/5.png> <./images/6.png> <.
-/images/c1.png> <./images/c2.png> <./images/c3.png>])
+<use images/frame0066.jpg>
+Package pdftex.def Info: images/frame0066.jpg used on input line 264.
+(pdftex.def)             Requested size: 77.4018pt x 58.04875pt.
+) (./related.tex [7 <./images/grounding_accuracy-eps-converted-to.pdf> <./image
+s/split_cases-eps-converted-to.pdf> <./images/fig6.pdf> <./images/frame0037.jpg
+> <./images/frame0044.jpg> <./images/frame0045.jpg> <./images/frame0047.jpg> <.
+/images/frame0048.jpg> <./images/frame0049.jpg> <./images/frame0050.jpg> <./ima
+ges/frame0056.jpg> <./images/frame0058.jpg> <./images/frame0062.jpg> <./images/
+frame0066.jpg>]) (./conclusion.tex) (./main.bbl
+[8])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1475,15 +1456,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BB416734BB946294F8D373062A57177D;1329.
+(rerunfilecheck)             Checksum: 73BDA0963DC6866BFDDDE60ADCE888E7;1305.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 39796 strings out of 493014
- 929261 string characters out of 6133351
- 1079561 words of memory out of 5000000
- 42613 multiletter control sequences out of 15000+600000
- 48019 words of font info for 103 fonts, out of 8000000 for 9000
+ 39826 strings out of 493014
+ 930112 string characters out of 6133351
+ 1079585 words of memory out of 5000000
+ 42640 multiletter control sequences out of 15000+600000
+ 47033 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,19n,77p,10393b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1507,7 +1488,7 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-d
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/f
@@ -1515,10 +1496,10 @@ onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main.pdf (9 pages, 4158396 bytes).
+Output written on main.pdf (9 pages, 1661255 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 498 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
